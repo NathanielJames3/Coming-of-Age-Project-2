@@ -69,6 +69,30 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpripple",
+			"name": "Warp ripple",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
 	"uniqueId": "4w0oyy5nyf4",
@@ -95,7 +119,20 @@
 			"Nightstand",
 			"Poster",
 			"Picture",
-			"TiledBackground"
+			"TiledBackground",
+			"TiledBackground3",
+			"Sprite2",
+			"Sprite",
+			"spike",
+			"platform2",
+			"object1",
+			"chain1",
+			"chain",
+			"Background",
+			"background1",
+			"terrain",
+			"saw",
+			"water"
 		],
 		"subfolders": []
 	},
@@ -109,7 +146,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"Erica Layout3"
 		],
 		"subfolders": []
 	},
