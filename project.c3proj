@@ -132,7 +132,8 @@
 			"background1",
 			"terrain",
 			"saw",
-			"water"
+			"water",
+			"pole"
 		],
 		"subfolders": []
 	},
