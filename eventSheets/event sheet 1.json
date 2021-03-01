@@ -115,6 +115,17 @@
 						"instance-variable": "Shots",
 						"value": "5"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 717518926288381,
+					"parameters": {
+						"audio-file": "Item2A",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 590936930974690
@@ -170,6 +181,17 @@
 					"parameters": {
 						"instance-variable": "Shots",
 						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 882885552014201,
+					"parameters": {
+						"audio-file": "slingshot_1",
+						"loop": "not-looping",
+						"volume": "-13",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -332,6 +354,17 @@
 					"id": "destroy",
 					"objectClass": "Hourglass",
 					"sid": 522268831699132
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 522578794173726,
+					"parameters": {
+						"audio-file": "Clock_ticking",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 561941359553150
@@ -735,6 +768,33 @@
 				}
 			],
 			"sid": 963213863540802
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 333425543077659,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 160589781926952,
+					"parameters": {
+						"audio-file": "male_jump",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 773818778117536
 		}
 	],
 	"sid": 477804456748490

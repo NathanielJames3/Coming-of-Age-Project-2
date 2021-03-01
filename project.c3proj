@@ -39,6 +39,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -133,7 +141,8 @@
 			"terrain",
 			"saw",
 			"water",
-			"pole"
+			"pole",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -164,7 +173,38 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Item_pickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 284117648099320
+				},
+				{
+					"name": "male_jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 383288281988900
+				},
+				{
+					"name": "slingshot_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 434625683651842
+				},
+				{
+					"name": "Item1A.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 477430227623072
+				},
+				{
+					"name": "Item2A.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 204199191089055
+				},
+				{
+					"name": "Clock_ticking.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 539212509270679
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
