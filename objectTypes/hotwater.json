@@ -1,0 +1,62 @@
+{
+	"name": "hotWater",
+	"plugin-id": "Sprite",
+	"sid": 145965277380450,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "warpripple",
+			"name": "WarpRipple"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 264,
+						"height": 261,
+						"originX": 0.5,
+						"originY": 0.49808429118773945,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7302379,
+						"collisionPoly": {
+							"points": [
+								0.03409090909090909,
+								0.02681992337164751,
+								0.5,
+								0.06513409961685823,
+								0.9507575757575758,
+								0.038314176245210725,
+								0.9810606060606061,
+								0.49808429118773945,
+								0.9810606060606061,
+								0.9846743295019157,
+								0.5,
+								0.9846743295019157,
+								0.015151515151515152,
+								0.9846743295019157,
+								0.015151515151515152,
+								0.49808429118773945
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 958420382216715,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
