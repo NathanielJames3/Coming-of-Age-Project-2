@@ -1,19 +1,19 @@
 {
 	"name": "saw",
 	"plugin-id": "Sprite",
-	"sid": 381611010680436,
+	"sid": 483960681271175,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Sin",
 			"name": "Sine",
-			"sid": 356104496072199
+			"sid": 963211377167182
 		},
 		{
 			"behaviorId": "Rotate",
 			"name": "Rotate",
-			"sid": 602146150741033
+			"sid": 505389308200758
 		}
 	],
 	"effectTypes": [],
@@ -26,10 +26,10 @@
 						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Users\\Miss America\\Downloads\\Pixel Adventure 1 (1)\\Free\\Traps\\Saw\\Off.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1522598,
+						"imageSpriteId": 911256,
 						"collisionPoly": {
 							"points": [
 								0.15,
@@ -54,7 +54,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 228165618259470,
+				"sid": 413111102599781,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

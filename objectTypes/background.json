@@ -1,7 +1,7 @@
 {
 	"name": "Background",
 	"plugin-id": "Sprite",
-	"sid": 774180498920278,
+	"sid": 818582083498554,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2393583,
+						"imageSpriteId": 7272488,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 182553280378568,
+				"sid": 138900065226543,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

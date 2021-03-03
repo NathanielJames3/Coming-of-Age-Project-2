@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 23404,
-	"name": "Layout 6 (Old age)",
+	"name": "ComingOfAgeProject",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -16,8 +16,48 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
@@ -32,38 +72,98 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpripple",
+			"name": "Warp ripple",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
-	"uniqueId": "97xdlt66uvj",
+	"uniqueId": "4w0oyy5nyf4",
 	"objectTypes": {
 		"items": [
+			"Player",
+			"Platform",
+			"Keyboard",
+			"SlingshotGet",
+			"ShotBullet",
+			"AmmoText",
+			"Hourglass",
+			"TimeText",
+			"Door",
+			"Target",
+			"RequirementDoor",
+			"PlayerTeen",
+			"PlayerAdult",
+			"PlayerOld",
+			"WallBG",
+			"Bed",
+			"Bookshelf",
+			"Chair",
+			"Nightstand",
+			"Poster",
+			"Picture",
+			"TiledBackground",
+			"TiledBackground3",
+			"Sprite2",
+			"Sprite",
+			"spike",
+			"platform2",
+			"object1",
+			"chain1",
+			"chain",
 			"Background",
 			"background1",
-			"solid",
-			"solid1"
+			"terrain",
+			"saw",
+			"water",
+			"pole",
+			"Audio"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Family1"
+		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Erica Layout6"
+			"Layout 1",
+			"Erica Layout3"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Layout 6 event sheet"
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -73,7 +173,38 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Item_pickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 284117648099320
+				},
+				{
+					"name": "male_jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 383288281988900
+				},
+				{
+					"name": "slingshot_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 434625683651842
+				},
+				{
+					"name": "Item1A.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 477430227623072
+				},
+				{
+					"name": "Item2A.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 204199191089055
+				},
+				{
+					"name": "Clock_ticking.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 539212509270679
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
@@ -91,17 +222,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-16.png",
+					"name": "icon-512.png",
 					"type": "image/png",
-					"sid": 503955959146110,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-32.png",
-					"type": "image/png",
-					"sid": 249824440609437,
+					"sid": 875360249913826,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -109,31 +232,7 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 529015865081414,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 387329034362218,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 878807245169036,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 282065972237690,
+					"sid": 993552308958898,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -141,9 +240,41 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 497290800531155,
+					"sid": 966890597315377,
 					"icon-info": {
 						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 857738678843742,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 272846697390494,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 137848538650676,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 533288340628960,
+					"icon-info": {
+						"purpose": "app-icon"
 					}
 				}
 			],
@@ -151,7 +282,29 @@
 		},
 		"general": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "juvi idle sprite sheet..png",
+							"type": "image/png",
+							"sid": 434593917550950
+						},
+						{
+							"name": "juvi-walk.png",
+							"type": "image/png",
+							"sid": 152844099038274
+						},
+						{
+							"name": "juvi jumpsheet.png",
+							"type": "image/png",
+							"sid": 926023732145085
+						}
+					],
+					"subfolders": [],
+					"name": "Sprites"
+				}
+			]
 		}
 	},
 	"timelines": {

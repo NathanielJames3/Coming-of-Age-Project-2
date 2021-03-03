@@ -1,19 +1,19 @@
 {
 	"name": "spike",
 	"plugin-id": "Sprite",
-	"sid": 448223651917535,
+	"sid": 784325700904434,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 518984595099870
-		},
-		{
 			"behaviorId": "Rotate",
 			"name": "Rotate",
-			"sid": 710746229345845
+			"sid": 667526379986122
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 339811619862893
 		}
 	],
 	"effectTypes": [],
@@ -26,10 +26,10 @@
 						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Users\\Miss America\\Downloads\\Pixel Adventure 1 (1)\\Free\\Traps\\Saw\\Off.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4679197,
+						"imageSpriteId": 1799759,
 						"collisionPoly": {
 							"points": [
 								0.15,
@@ -54,7 +54,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 854611009132930,
+				"sid": 415404531100283,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
