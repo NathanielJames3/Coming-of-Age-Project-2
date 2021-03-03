@@ -157,7 +157,10 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"Erica Layout3"
+			"Erica Level 1",
+			"Erica Level 2",
+			"Erica Level 3",
+			"Erica Level 4"
 		],
 		"subfolders": []
 	},
