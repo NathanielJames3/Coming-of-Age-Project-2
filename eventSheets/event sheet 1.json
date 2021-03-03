@@ -795,6 +795,141 @@
 				}
 			],
 			"sid": 773818778117536
+		},
+		{
+			"eventType": "comment",
+			"text": "Clouds spawn and float then destroy offscreen"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 153326977889546
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Cloud1",
+					"sid": 186174243131312,
+					"parameters": {
+						"angle": "0",
+						"distance": "1.5"
+					}
+				},
+				{
+					"id": "move-at-angle",
+					"objectClass": "Cloud2",
+					"sid": 450900144959363,
+					"parameters": {
+						"angle": "0",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 635819001266887
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 370840452489600,
+					"parameters": {
+						"interval-seconds": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 118305032040927,
+					"parameters": {
+						"object-to-create": "Cloud1",
+						"layer": "0",
+						"x": "-280",
+						"y": "random(-32,200)",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 300748546066109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 839241676210818,
+					"parameters": {
+						"interval-seconds": "20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 942169488647409,
+					"parameters": {
+						"object-to-create": "Cloud2",
+						"layer": "0",
+						"x": "-280",
+						"y": "random(-32,200)",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 740903090277434
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Cloud1",
+					"sid": 314974283990110,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "LayoutWidth"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Cloud1",
+					"sid": 176925005672228
+				}
+			],
+			"sid": 649156437851799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Cloud2",
+					"sid": 492133216069397,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "LayoutWidth"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Cloud2",
+					"sid": 638449092295063
+				}
+			],
+			"sid": 780041911900481
 		}
 	],
 	"sid": 477804456748490

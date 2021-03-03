@@ -142,7 +142,10 @@
 			"saw",
 			"water",
 			"pole",
-			"Audio"
+			"Audio",
+			"Cloud1",
+			"Cloud2",
+			"background2"
 		],
 		"subfolders": []
 	},

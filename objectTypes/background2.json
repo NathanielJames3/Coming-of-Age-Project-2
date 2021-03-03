@@ -1,20 +1,20 @@
 {
-	"name": "background1",
+	"name": "background2",
 	"plugin-id": "TiledBg",
-	"sid": 382412999015571,
+	"sid": 319572577143916,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 650,
-		"height": 650,
+		"width": 1200,
+		"height": 1200,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\SkyBG.png",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 3991780,
+		"imageSpriteId": 1262051,
 		"useCollisionPoly": true
 	}
 }

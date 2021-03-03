@@ -54,7 +54,7 @@
 						"x": -20,
 						"y": -15,
 						"width": 1744,
-						"height": 994,
+						"height": 786,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -729,8 +729,8 @@
 						}
 					},
 					"world": {
-						"x": 856.5,
-						"y": 697.5,
+						"x": 824,
+						"y": 703,
 						"width": 1865,
 						"height": 591,
 						"originX": 0.5,
@@ -1421,6 +1421,39 @@
 						"y": 116,
 						"width": 137,
 						"height": 31,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Cloud1",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 159,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -58,
+						"y": -226,
+						"width": 301.50262960180316,
+						"height": 83.49737039819684,
 						"originX": 0,
 						"originY": 0,
 						"color": [
