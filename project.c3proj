@@ -95,6 +95,22 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "warpripple",
 			"name": "Warp ripple",
@@ -145,7 +161,9 @@
 			"Audio",
 			"Cloud1",
 			"Cloud2",
-			"background2"
+			"background2",
+			"OldCane",
+			"Death"
 		],
 		"subfolders": []
 	},

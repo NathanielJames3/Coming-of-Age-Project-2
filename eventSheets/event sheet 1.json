@@ -66,9 +66,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-outside-layout",
+					"id": "on-collision-with-another-object",
 					"objectClass": "Family1",
-					"sid": 768104089978150
+					"sid": 150159091415649,
+					"parameters": {
+						"object": "Death"
+					}
 				}
 			],
 			"actions": [
@@ -79,6 +82,48 @@
 				}
 			],
 			"sid": 958774632917459
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Family1",
+					"sid": 241940668419278,
+					"parameters": {
+						"object": "saw"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 245786244377924
+				}
+			],
+			"sid": 179470833180175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Family1",
+					"sid": 619956615368736,
+					"parameters": {
+						"object": "spike"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 569025811681756
+				}
+			],
+			"sid": 248531512452408
 		},
 		{
 			"eventType": "block",
@@ -410,9 +455,12 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
+					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 453597065390717
+					"sid": 313744069870264,
+					"parameters": {
+						"layout": "Layout 1"
+					}
 				},
 				{
 					"id": "reset-global-variables",
@@ -501,9 +549,12 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
+					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
-					"sid": 301089015029405
+					"sid": 151116913081633,
+					"parameters": {
+						"which": "next"
+					}
 				},
 				{
 					"id": "reset-global-variables",
@@ -930,6 +981,33 @@
 				}
 			],
 			"sid": 780041911900481
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 667482564385481,
+					"parameters": {
+						"key": 88
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "PlayerOld",
+					"sid": 723612070504368,
+					"parameters": {
+						"object": "OldCane",
+						"layer": "\"GAME\"",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 925283860538568
 		}
 	],
 	"sid": 477804456748490
