@@ -1,23 +1,23 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 23404,
-	"name": "Level Three (Teenage Layer)",
+	"name": "Layout 6 (Old age)",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
@@ -37,33 +37,15 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Rotate",
-			"name": "Rotate",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "warpripple",
-			"name": "Warp ripple",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
 		}
 	],
-	"uniqueId": "z0reb48bqug",
+	"uniqueId": "97xdlt66uvj",
 	"objectTypes": {
 		"items": [
 			"Background",
+			"background1",
 			"solid",
-			"solid2",
-			"water",
-			"pole",
-			"spike"
+			"solid1"
 		],
 		"subfolders": []
 	},
@@ -75,13 +57,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Erica Layout 4"
+			"Erica Layout6"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Layout 4 event sheet"
+			"Layout 6 event sheet"
 		],
 		"subfolders": []
 	},
@@ -111,7 +93,7 @@
 				{
 					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 876454975719772,
+					"sid": 503955959146110,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -119,7 +101,15 @@
 				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 729043067422459,
+					"sid": 249824440609437,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 529015865081414,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -127,31 +117,7 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 131821574050113,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "loading-logo.png",
-					"type": "image/png",
-					"sid": 573002989574776,
-					"icon-info": {
-						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-64.png",
-					"type": "image/png",
-					"sid": 380170382274784,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 833401298275067,
+					"sid": 387329034362218,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -159,9 +125,25 @@
 				{
 					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 356984263588398,
+					"sid": 878807245169036,
 					"icon-info": {
 						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 282065972237690,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 497290800531155,
+					"icon-info": {
+						"purpose": "loading-logo"
 					}
 				}
 			],

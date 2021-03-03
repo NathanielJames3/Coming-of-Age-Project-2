@@ -1,7 +1,7 @@
 {
 	"name": "background1",
 	"plugin-id": "TiledBg",
-	"sid": 382412999015571,
+	"sid": 418296292035120,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,10 +11,10 @@
 		"height": 64,
 		"originX": 0.5,
 		"originY": 0.5,
-		"originalSource": "C:\\Users\\Miss America\\Downloads\\Pixel Adventure 1 (1)\\Free\\Background\\Pink.png",
+		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 8828852,
+		"imageSpriteId": 5249902,
 		"useCollisionPoly": true
 	}
 }
