@@ -95,22 +95,6 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "destroy",
-			"name": "Destroy outside layout",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
 			"type": "effect",
 			"id": "warpripple",
 			"name": "Warp ripple",
@@ -134,7 +118,6 @@
 			"Target",
 			"RequirementDoor",
 			"PlayerTeen",
-			"PlayerAdult",
 			"PlayerOld",
 			"WallBG",
 			"Bed",
@@ -162,8 +145,9 @@
 			"Cloud1",
 			"Cloud2",
 			"background2",
-			"OldCane",
-			"Death"
+			"Death",
+			"Destroy",
+			"Text"
 		],
 		"subfolders": []
 	},
@@ -177,17 +161,22 @@
 	},
 	"layouts": {
 		"items": [
+			"Title",
+			"Info",
 			"Layout 1",
 			"Erica Level 1",
 			"Erica Level 2",
 			"Erica Level 3",
-			"Erica Level 4"
+			"Erica Level 4",
+			"Ending"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet 2",
+			"Event sheet 3"
 		],
 		"subfolders": []
 	},

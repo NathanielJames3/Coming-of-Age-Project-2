@@ -1450,10 +1450,10 @@
 					"world": {
 						"x": 186.97692307692307,
 						"y": 92.58407079646018,
-						"width": 203.85778372307692,
-						"height": 165.43448553982302,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 34.597274,
+						"height": 53.873478000000006,
+						"originX": 1.146153846153846,
+						"originY": 0.6415929203539823,
 						"color": [
 							1,
 							1,
@@ -1508,10 +1508,10 @@
 					"world": {
 						"x": 916,
 						"y": 38.5,
-						"width": 24,
-						"height": 25,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 28.8,
+						"height": 34,
+						"originX": 1.3433333333333333,
+						"originY": 0.35,
 						"color": [
 							1,
 							1,
@@ -1539,6 +1539,35 @@
 						"y": 305,
 						"width": 47,
 						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Hourglass",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 194,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 417,
+						"y": 362,
+						"width": 47,
+						"height": 39,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1729,93 +1758,6 @@
 						"y": -374,
 						"width": 33,
 						"height": 28,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "OldCane",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 187,
-					"instanceVariables": {},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"DestroyOutsideLayout": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 129,
-						"y": -484,
-						"width": 51,
-						"height": 53,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Hourglass",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 194,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 417,
-						"y": 362,
-						"width": 47,
-						"height": 39,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -2,7 +2,20 @@
 	"name": "Family1",
 	"plugin-id": "Sprite",
 	"sid": 737710289981415,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Slingshot",
+			"type": "number",
+			"desc": "",
+			"sid": 535257889910596
+		},
+		{
+			"name": "Shots",
+			"type": "number",
+			"desc": "",
+			"sid": 879298847165212
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "scrollto",
@@ -14,7 +27,6 @@
 	"members": [
 		"Player",
 		"PlayerTeen",
-		"PlayerAdult",
 		"PlayerOld"
 	]
 }

@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
+						"width": 300,
+						"height": 340,
+						"originX": 1.3433333333333333,
+						"originY": 0.35,
+						"originalSource": "C:\\Users\\Nate\\Documents\\GitHub\\Coming-of-Age-Project-2\\images\\slingshot.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5755883,
+						"imageSpriteId": 2340349,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

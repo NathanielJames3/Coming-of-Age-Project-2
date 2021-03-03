@@ -152,35 +152,17 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "SlingshotGet",
-					"sid": 255795722442979,
+					"sid": 773992000546960,
 					"parameters": {
-						"object": "Player"
+						"object": "Family1"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "add-to-instvar",
-					"objectClass": "Player",
-					"sid": 103920893286000,
-					"parameters": {
-						"instance-variable": "Slingshot",
-						"value": "1"
-					}
-				},
-				{
 					"id": "destroy",
 					"objectClass": "SlingshotGet",
 					"sid": 666401946033646
-				},
-				{
-					"id": "add-to-instvar",
-					"objectClass": "Player",
-					"sid": 926596042837051,
-					"parameters": {
-						"instance-variable": "Shots",
-						"value": "5"
-					}
 				},
 				{
 					"id": "play",
@@ -191,6 +173,24 @@
 						"loop": "not-looping",
 						"volume": "-10",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Family1",
+					"sid": 637654554256686,
+					"parameters": {
+						"instance-variable": "Slingshot",
+						"value": "1"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Family1",
+					"sid": 346110528314415,
+					"parameters": {
+						"instance-variable": "Shots",
+						"value": "5"
 					}
 				}
 			],
@@ -209,18 +209,18 @@
 				},
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Player",
-					"sid": 772712821922112,
+					"objectClass": "Family1",
+					"sid": 128422859650462,
 					"parameters": {
 						"instance-variable": "Slingshot",
-						"comparison": 5,
+						"comparison": 0,
 						"value": "1"
 					}
 				},
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Player",
-					"sid": 218147695634303,
+					"objectClass": "Family1",
+					"sid": 861945580153010,
 					"parameters": {
 						"instance-variable": "Shots",
 						"comparison": 4,
@@ -231,22 +231,13 @@
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "Player",
-					"sid": 469575766665444,
+					"objectClass": "Family1",
+					"sid": 741444326774631,
 					"parameters": {
 						"object": "ShotBullet",
 						"layer": "\"GAME\"",
 						"image-point": "0",
 						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Player",
-					"sid": 136870492924107,
-					"parameters": {
-						"instance-variable": "Shots",
-						"value": "1"
 					}
 				},
 				{
@@ -258,6 +249,15 @@
 						"loop": "not-looping",
 						"volume": "-13",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Family1",
+					"sid": 568429673945783,
+					"parameters": {
+						"instance-variable": "Shots",
+						"value": "1"
 					}
 				}
 			],
@@ -274,7 +274,7 @@
 				{
 					"id": "is-mirrored",
 					"objectClass": "Player",
-					"sid": 791491586573704
+					"sid": 627058678280170
 				}
 			],
 			"actions": [
@@ -293,6 +293,58 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-created",
+					"objectClass": "ShotBullet",
+					"sid": 501613897545914
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "PlayerOld",
+					"sid": 524755201820748
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "ShotBullet",
+					"sid": 731359452053937,
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 279728487008477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "ShotBullet",
+					"sid": 622199664659100
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "PlayerTeen",
+					"sid": 609841009241285
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "ShotBullet",
+					"sid": 941831661503121,
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 587770726226632
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
 					"sid": 335802889376035,
@@ -305,13 +357,61 @@
 				{
 					"id": "set-mirrored",
 					"objectClass": "Player",
-					"sid": 820892696157974,
+					"sid": 763477359218076,
 					"parameters": {
 						"state": "mirrored"
 					}
 				}
 			],
 			"sid": 681338052001433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 523417769133893,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "PlayerTeen",
+					"sid": 581591884961788,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 935666864293898
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 623152679725258,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "PlayerOld",
+					"sid": 801550925505508,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 959677497496330
 		},
 		{
 			"eventType": "block",
@@ -329,13 +429,61 @@
 				{
 					"id": "set-mirrored",
 					"objectClass": "Player",
-					"sid": 572613251427732,
+					"sid": 840166032571046,
 					"parameters": {
 						"state": "not-mirrored"
 					}
 				}
 			],
 			"sid": 807219466917136
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 560709207804006,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "PlayerTeen",
+					"sid": 361132234272726,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 790242700227654
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 140528151702486,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "PlayerOld",
+					"sid": 750918363154600,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 707478869423537
 		},
 		{
 			"eventType": "block",
@@ -367,18 +515,18 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "AmmoText",
-					"sid": 136526826381995,
-					"parameters": {
-						"text": "\"Ammo: \" & Player.Shots"
-					}
-				},
-				{
-					"id": "set-text",
 					"objectClass": "TimeText",
 					"sid": 432385137670544,
 					"parameters": {
 						"text": "\"Time: \" & LimitTime"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "AmmoText",
+					"sid": 957431756582641,
+					"parameters": {
+						"text": "\"Ammo: \" & Family1.Shots"
 					}
 				}
 			],
@@ -642,22 +790,6 @@
 					"sid": 641159497033130
 				},
 				{
-					"id": "set-height",
-					"objectClass": "PlayerTeen",
-					"sid": 446039079474831,
-					"parameters": {
-						"height": "81"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "PlayerTeen",
-					"sid": 930662974360671,
-					"parameters": {
-						"width": "79"
-					}
-				},
-				{
 					"id": "set-max-speed",
 					"objectClass": "PlayerTeen",
 					"sid": 687650707300859,
@@ -683,86 +815,27 @@
 					"parameters": {
 						"jump-strength": "950"
 					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerTeen",
+					"sid": 247013354137290,
+					"behaviorType": "ScrollTo2",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerTeen",
+					"sid": 943381171543319,
+					"parameters": {
+						"width": "54",
+						"height": "94"
+					}
 				}
 			],
 			"sid": 315806455248524
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 867450871685904,
-					"parameters": {
-						"variable": "LimitTime",
-						"comparison": 3,
-						"value": "15"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "PlayerTeen",
-					"sid": 511396312079270,
-					"parameters": {
-						"object": "PlayerAdult",
-						"layer": "\"GAME\"",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "PlayerTeen",
-					"sid": 929826645363411
-				},
-				{
-					"id": "set-height",
-					"objectClass": "PlayerAdult",
-					"sid": 391055330449070,
-					"parameters": {
-						"height": "81"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "PlayerAdult",
-					"sid": 572312632791643,
-					"parameters": {
-						"width": "79"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "PlayerAdult",
-					"sid": 599036920536142,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "530"
-					}
-				},
-				{
-					"id": "set-double-jump",
-					"objectClass": "PlayerAdult",
-					"sid": 404902143164685,
-					"behaviorType": "Platform",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-jump-strength",
-					"objectClass": "PlayerAdult",
-					"sid": 897622210012682,
-					"behaviorType": "Platform",
-					"parameters": {
-						"jump-strength": "550"
-					}
-				}
-			],
-			"sid": 390917199359035
 		},
 		{
 			"eventType": "block",
@@ -781,8 +854,8 @@
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "PlayerAdult",
-					"sid": 673883077757081,
+					"objectClass": "PlayerTeen",
+					"sid": 680780584891929,
 					"parameters": {
 						"object": "PlayerOld",
 						"layer": "\"GAME\"",
@@ -792,24 +865,8 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "PlayerAdult",
-					"sid": 706029566651505
-				},
-				{
-					"id": "set-height",
-					"objectClass": "PlayerOld",
-					"sid": 851596274238190,
-					"parameters": {
-						"height": "81"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "PlayerOld",
-					"sid": 750041837439893,
-					"parameters": {
-						"width": "79"
-					}
+					"objectClass": "PlayerTeen",
+					"sid": 113500198340683
 				},
 				{
 					"id": "set-max-speed",
@@ -832,10 +889,28 @@
 				{
 					"id": "set-jump-strength",
 					"objectClass": "PlayerOld",
-					"sid": 502762201039640,
+					"sid": 896990876290541,
 					"behaviorType": "Platform",
 					"parameters": {
-						"jump-strength": "350"
+						"jump-strength": "380"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerOld",
+					"sid": 996218822533318,
+					"behaviorType": "ScrollTo2",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerOld",
+					"sid": 618867699718268,
+					"parameters": {
+						"width": "54",
+						"height": "90"
 					}
 				}
 			],
@@ -1007,28 +1082,43 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 667482564385481,
+					"id": "on-collision-with-another-object",
+					"objectClass": "Destroy",
+					"sid": 744701496188830,
 					"parameters": {
-						"key": 88
+						"object": "PlayerTeen"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "spawn-another-object",
-					"objectClass": "PlayerOld",
-					"sid": 723612070504368,
+					"id": "destroy",
+					"objectClass": "PlayerTeen",
+					"sid": 228624481167636
+				}
+			],
+			"sid": 895660193405320
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Destroy",
+					"sid": 483365522562375,
 					"parameters": {
-						"object": "OldCane",
-						"layer": "\"GAME\"",
-						"image-point": "0",
-						"create-hierarchy": false
+						"object": "PlayerOld"
 					}
 				}
 			],
-			"sid": 925283860538568
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PlayerOld",
+					"sid": 318186977708519
+				}
+			],
+			"sid": 648088374887459
 		}
 	],
 	"sid": 477804456748490

@@ -1828,64 +1828,6 @@
 					}
 				},
 				{
-					"type": "OldCane",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 191,
-					"instanceVariables": {},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"DestroyOutsideLayout": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 740,
-						"y": -242,
-						"width": 51,
-						"height": 53,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "AmmoText",
 					"properties": {
 						"text": "Ammo:",
@@ -2012,10 +1954,10 @@
 					"world": {
 						"x": 1666,
 						"y": 213,
-						"width": -208.60375473846153,
-						"height": 177.717671380531,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": -35.402726,
+						"height": 57.873478000000006,
+						"originX": 1.146153846153846,
+						"originY": 0.6415929203539823,
 						"color": [
 							1,
 							1,
