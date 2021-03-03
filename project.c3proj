@@ -216,6 +216,11 @@
 					"name": "Clock_ticking.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 539212509270679
+				},
+				{
+					"name": "the_fade.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 985145692982803
 				}
 			],
 			"subfolders": []
@@ -378,5 +383,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "Title"
 }
