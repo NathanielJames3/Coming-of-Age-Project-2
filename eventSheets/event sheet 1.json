@@ -130,6 +130,27 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
+					"objectClass": "Family1",
+					"sid": 474656969857015,
+					"parameters": {
+						"object": "water"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 618766534710298
+				}
+			],
+			"sid": 139173229135782
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
 					"objectClass": "SlingshotGet",
 					"sid": 255795722442979,
 					"parameters": {
