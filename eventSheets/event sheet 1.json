@@ -411,6 +411,32 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 530607114455235,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 843817118110983,
+							"parameters": {
+								"animation": "\"Jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 473207957228827,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
 							"sid": 950511656181595,
