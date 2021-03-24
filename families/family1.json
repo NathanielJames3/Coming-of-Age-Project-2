@@ -8,12 +8,6 @@
 			"type": "number",
 			"desc": "",
 			"sid": 535257889910596
-		},
-		{
-			"name": "Shots",
-			"type": "number",
-			"desc": "",
-			"sid": 879298847165212
 		}
 	],
 	"behaviorTypes": [

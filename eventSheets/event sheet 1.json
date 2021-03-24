@@ -12,658 +12,492 @@
 			"sid": 338134918248325
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Actions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 726258934902402,
-					"parameters": {
-						"key": 90
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-max-speed",
-					"objectClass": "Player",
-					"sid": 467345524996863,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "630"
-					}
-				}
-			],
-			"sid": 166129109419192
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 850285640644005,
-					"parameters": {
-						"key": 90
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-max-speed",
-					"objectClass": "Player",
-					"sid": 743713129012138,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "330"
-					}
-				}
-			],
-			"sid": 305368383496153
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Family1",
-					"sid": 150159091415649,
-					"parameters": {
-						"object": "Death"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 300859317821160
-				}
-			],
-			"sid": 958774632917459
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Family1",
-					"sid": 241940668419278,
-					"parameters": {
-						"object": "saw"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 245786244377924
-				}
-			],
-			"sid": 179470833180175
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Family1",
-					"sid": 619956615368736,
-					"parameters": {
-						"object": "spike"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 569025811681756
-				}
-			],
-			"sid": 248531512452408
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Family1",
-					"sid": 474656969857015,
-					"parameters": {
-						"object": "water"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 618766534710298
-				}
-			],
-			"sid": 139173229135782
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "SlingshotGet",
-					"sid": 773992000546960,
-					"parameters": {
-						"object": "Family1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "SlingshotGet",
-					"sid": 666401946033646
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Family1",
+							"sid": 896798721248324,
+							"parameters": {
+								"object": "Door"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-nextprevious-layout",
+							"objectClass": "System",
+							"sid": 925901211075438,
+							"parameters": {
+								"which": "next"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 913310036084239
+						}
+					],
+					"sid": 366139099542320
 				},
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 717518926288381,
-					"parameters": {
-						"audio-file": "Item2A",
-						"loop": "not-looping",
-						"volume": "-10",
-						"tag-optional": "\"\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 198648443857230,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 661093998249342,
+							"parameters": {
+								"audio-file": "male_jump",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 765698034293640
 				},
 				{
-					"id": "add-to-instvar",
-					"objectClass": "Family1",
-					"sid": 637654554256686,
-					"parameters": {
-						"instance-variable": "Slingshot",
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destroy",
+							"sid": 243700433335022,
+							"parameters": {
+								"object": "PlayerTeen"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PlayerTeen",
+							"sid": 438357135104177
+						}
+					],
+					"sid": 491771380090147
 				},
 				{
-					"id": "add-to-instvar",
-					"objectClass": "Family1",
-					"sid": 346110528314415,
-					"parameters": {
-						"instance-variable": "Shots",
-						"value": "5"
-					}
-				}
-			],
-			"sid": 590936930974690
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 279506104081998,
-					"parameters": {
-						"key": 88
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Destroy",
+							"sid": 861055579862983,
+							"parameters": {
+								"object": "PlayerOld"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PlayerOld",
+							"sid": 798116467655578
+						}
+					],
+					"sid": 301201224514774
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "Family1",
-					"sid": 128422859650462,
-					"parameters": {
-						"instance-variable": "Slingshot",
-						"comparison": 0,
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "SlingshotGet",
+							"sid": 377207677643003,
+							"parameters": {
+								"object": "Family1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "SlingshotGet",
+							"sid": 121066847864290
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 193527407856836,
+							"parameters": {
+								"audio-file": "Item2A",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Family1",
+							"sid": 636725881774255,
+							"parameters": {
+								"instance-variable": "Slingshot",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 145261707286658
 				},
 				{
-					"id": "compare-instance-variable",
-					"objectClass": "Family1",
-					"sid": 861945580153010,
-					"parameters": {
-						"instance-variable": "Shots",
-						"comparison": 4,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Family1",
-					"sid": 741444326774631,
-					"parameters": {
-						"object": "ShotBullet",
-						"layer": "\"GAME\"",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "ShotBullet",
+							"sid": 275492143302963
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "Player",
+							"sid": 290687411123178
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "ShotBullet",
+							"sid": 338217623110880,
+							"parameters": {
+								"angle": "180"
+							}
+						}
+					],
+					"sid": 520788165279243
 				},
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 882885552014201,
-					"parameters": {
-						"audio-file": "slingshot_1",
-						"loop": "not-looping",
-						"volume": "-13",
-						"tag-optional": "\"\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "ShotBullet",
+							"sid": 231882745994807
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "PlayerOld",
+							"sid": 671057444751496
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "ShotBullet",
+							"sid": 116520665953166,
+							"parameters": {
+								"angle": "180"
+							}
+						}
+					],
+					"sid": 406409400652075
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Family1",
-					"sid": 568429673945783,
-					"parameters": {
-						"instance-variable": "Shots",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 459168157412063
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "ShotBullet",
-					"sid": 372694474933191
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "ShotBullet",
+							"sid": 170580639318256
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "PlayerTeen",
+							"sid": 456823670208193
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "ShotBullet",
+							"sid": 430727691943789,
+							"parameters": {
+								"angle": "180"
+							}
+						}
+					],
+					"sid": 129061595200285
 				},
 				{
-					"id": "is-mirrored",
-					"objectClass": "Player",
-					"sid": 627058678280170
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle",
-					"objectClass": "ShotBullet",
-					"sid": 483057563732544,
-					"parameters": {
-						"angle": "180"
-					}
-				}
-			],
-			"sid": 280161054164436
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "ShotBullet",
-					"sid": 501613897545914
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-outside-layout",
+							"objectClass": "ShotBullet",
+							"sid": 535622342098908
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ShotBullet",
+							"sid": 943539324803608
+						}
+					],
+					"sid": 625661239350935
 				},
 				{
-					"id": "is-mirrored",
-					"objectClass": "PlayerOld",
-					"sid": 524755201820748
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle",
-					"objectClass": "ShotBullet",
-					"sid": 731359452053937,
-					"parameters": {
-						"angle": "180"
-					}
-				}
-			],
-			"sid": 279728487008477
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "ShotBullet",
-					"sid": 622199664659100
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 626246723194901,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Player",
+							"sid": 492739377445519,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 953423228286408
 				},
 				{
-					"id": "is-mirrored",
-					"objectClass": "PlayerTeen",
-					"sid": 609841009241285
-				}
-			],
-			"actions": [
-				{
-					"id": "set-angle",
-					"objectClass": "ShotBullet",
-					"sid": 941831661503121,
-					"parameters": {
-						"angle": "180"
-					}
-				}
-			],
-			"sid": 587770726226632
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 335802889376035,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 763477359218076,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 681338052001433
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 523417769133893,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "PlayerTeen",
-					"sid": 581591884961788,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 935666864293898
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 623152679725258,
-					"parameters": {
-						"key": 37
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "PlayerOld",
-					"sid": 801550925505508,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 959677497496330
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 969696183214549,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "Player",
-					"sid": 840166032571046,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 807219466917136
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 560709207804006,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "PlayerTeen",
-					"sid": 361132234272726,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 790242700227654
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 140528151702486,
-					"parameters": {
-						"key": 39
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "PlayerOld",
-					"sid": 750918363154600,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				}
-			],
-			"sid": 707478869423537
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-outside-layout",
-					"objectClass": "ShotBullet",
-					"sid": 163133177865373
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "ShotBullet",
-					"sid": 171850800895538
-				}
-			],
-			"sid": 764062536918711
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 123426085177959
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "TimeText",
-					"sid": 432385137670544,
-					"parameters": {
-						"text": "\"Time: \" & LimitTime"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 744308612866783,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "PlayerTeen",
+							"sid": 634731190509576,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 749993359656380
 				},
 				{
-					"id": "set-text",
-					"objectClass": "AmmoText",
-					"sid": 957431756582641,
-					"parameters": {
-						"text": "\"Ammo: \" & Family1.Shots"
-					}
-				}
-			],
-			"sid": 499476850330922
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Family1",
-					"sid": 862594287251153,
-					"parameters": {
-						"object": "Hourglass"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 538392268669037,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "PlayerOld",
+							"sid": 807900639388810,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 424719196706337
 				},
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 965597240902612,
-					"parameters": {
-						"variable": "LimitTime",
-						"comparison": 5,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 365439043459157,
-					"parameters": {
-						"variable": "LimitTime",
-						"value": "2"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 991539742488565,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Player",
+							"sid": 320382226518004,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 627336029123767
 				},
 				{
-					"id": "destroy",
-					"objectClass": "Hourglass",
-					"sid": 522268831699132
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 703047697490553,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "PlayerTeen",
+							"sid": 830212792229996,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 974724750264811
 				},
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 522578794173726,
-					"parameters": {
-						"audio-file": "Clock_ticking",
-						"loop": "not-looping",
-						"volume": "-5",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 561941359553150
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 702445230741953,
-					"parameters": {
-						"interval-seconds": "1.0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 755029710524018,
-					"parameters": {
-						"variable": "LimitTime",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 159161943741907
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 188707709748656,
-					"parameters": {
-						"variable": "LimitTime",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 313744069870264,
-					"parameters": {
-						"layout": "Layout 1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 678822954261440,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "PlayerOld",
+							"sid": 397387007920733,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 673107934085642
 				},
 				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 225965302929564
-				}
-			],
-			"sid": 204584731130362
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 462748813046889,
-					"parameters": {
-						"key": 82
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 514680039341259
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 950511656181595,
+							"parameters": {
+								"key": 90
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Player",
+							"sid": 497971894909270,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "330"
+							}
+						}
+					],
+					"sid": 670600550950314
 				},
 				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 767224709792469
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 597474776636312,
+							"parameters": {
+								"key": 90
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Player",
+							"sid": 902698472082899,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "630"
+							}
+						}
+					],
+					"sid": 390726067891430
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 144917586119167,
+							"parameters": {
+								"key": 88
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Family1",
+							"sid": 511910996463117,
+							"parameters": {
+								"instance-variable": "Slingshot",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Family1",
+							"sid": 490707635740224,
+							"parameters": {
+								"object": "ShotBullet",
+								"layer": "\"GAME\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 809352453197023,
+							"parameters": {
+								"audio-file": "slingshot_1",
+								"loop": "not-looping",
+								"volume": "-13",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 535810321693372
 				}
 			],
-			"sid": 272311896238248
+			"sid": 555358870012969
 		},
 		{
 			"eventType": "block",
@@ -703,261 +537,6 @@
 				}
 			],
 			"sid": 628410647145216
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Family1",
-					"sid": 818853704238641,
-					"parameters": {
-						"object": "Door"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 151116913081633,
-					"parameters": {
-						"which": "next"
-					}
-				},
-				{
-					"id": "reset-global-variables",
-					"objectClass": "System",
-					"sid": 639735446623477
-				}
-			],
-			"sid": 451609695475746
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "ShotBullet",
-					"sid": 312727153874044,
-					"parameters": {
-						"object": "Hourglass"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 866558785383329,
-					"parameters": {
-						"variable": "LimitTime",
-						"value": "5"
-					}
-				}
-			],
-			"sid": 523044462375085
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 700893271968923,
-					"parameters": {
-						"variable": "LimitTime",
-						"comparison": 3,
-						"value": "20"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Player",
-					"sid": 247538645002902,
-					"parameters": {
-						"object": "PlayerTeen",
-						"layer": "\"GAME\"",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Player",
-					"sid": 641159497033130
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "PlayerTeen",
-					"sid": 687650707300859,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "630"
-					}
-				},
-				{
-					"id": "set-double-jump",
-					"objectClass": "PlayerTeen",
-					"sid": 236903789831918,
-					"behaviorType": "Platform",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-jump-strength",
-					"objectClass": "PlayerTeen",
-					"sid": 887500843108637,
-					"behaviorType": "Platform",
-					"parameters": {
-						"jump-strength": "950"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "PlayerTeen",
-					"sid": 247013354137290,
-					"behaviorType": "ScrollTo2",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "PlayerTeen",
-					"sid": 943381171543319,
-					"parameters": {
-						"width": "54",
-						"height": "94"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "TimerHealthBarSprite",
-					"sid": 872252045815932,
-					"parameters": {
-						"frame-number": "1"
-					}
-				}
-			],
-			"sid": 315806455248524
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 697255264587178,
-					"parameters": {
-						"variable": "LimitTime",
-						"comparison": 3,
-						"value": "10"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "PlayerTeen",
-					"sid": 680780584891929,
-					"parameters": {
-						"object": "PlayerOld",
-						"layer": "\"GAME\"",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "PlayerTeen",
-					"sid": 113500198340683
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "PlayerOld",
-					"sid": 764703120051173,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "230"
-					}
-				},
-				{
-					"id": "set-double-jump",
-					"objectClass": "PlayerOld",
-					"sid": 225761406192244,
-					"behaviorType": "Platform",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-jump-strength",
-					"objectClass": "PlayerOld",
-					"sid": 896990876290541,
-					"behaviorType": "Platform",
-					"parameters": {
-						"jump-strength": "380"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "PlayerOld",
-					"sid": 996218822533318,
-					"behaviorType": "ScrollTo2",
-					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "PlayerOld",
-					"sid": 618867699718268,
-					"parameters": {
-						"width": "54",
-						"height": "90"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "TimerHealthBarSprite",
-					"sid": 226234406984896,
-					"parameters": {
-						"frame-number": "2"
-					}
-				}
-			],
-			"sid": 963213863540802
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 333425543077659,
-					"parameters": {
-						"key": 38
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 160589781926952,
-					"parameters": {
-						"audio-file": "male_jump",
-						"loop": "not-looping",
-						"volume": "-5",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 773818778117536
 		},
 		{
 			"eventType": "group",
@@ -1105,48 +684,6 @@
 			"sid": 363267438617778
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Destroy",
-					"sid": 744701496188830,
-					"parameters": {
-						"object": "PlayerTeen"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "PlayerTeen",
-					"sid": 228624481167636
-				}
-			],
-			"sid": 895660193405320
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Destroy",
-					"sid": 483365522562375,
-					"parameters": {
-						"object": "PlayerOld"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "PlayerOld",
-					"sid": 318186977708519
-				}
-			],
-			"sid": 648088374887459
-		},
-		{
 			"eventType": "comment",
 			"text": "Music"
 		},
@@ -1175,125 +712,556 @@
 			"sid": 414321815191788
 		},
 		{
-			"eventType": "comment",
-			"text": "Timerbar"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Time Limit",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 740999842051977
-				}
-			],
-			"actions": [
-				{
-					"id": "set-width",
-					"objectClass": "TimerHealthBarSprite",
-					"sid": 514713683914786,
-					"parameters": {
-						"width": "100*(LimitTime/10)"
-					}
-				}
-			],
-			"sid": 830939358235979
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 467843490028227,
-					"parameters": {
-						"variable": "LimitTime",
-						"comparison": 0,
-						"value": "23"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Caution",
-					"sid": 359621776730616,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 371816467502729
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TimeText",
+							"sid": 270969434093450,
+							"parameters": {
+								"text": "\"Time: \" & LimitTime"
+							}
+						}
+					],
+					"sid": 272694186335421
 				},
 				{
-					"id": "flash",
-					"objectClass": "Caution",
-					"sid": 452812888408827,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "2.0"
-					}
-				}
-			],
-			"sid": 689258589021005
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 987791481870039,
-					"parameters": {
-						"variable": "LimitTime",
-						"comparison": 0,
-						"value": "13"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Caution",
-					"sid": 846753469804318,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Family1",
+							"sid": 614864431593016,
+							"parameters": {
+								"object": "Hourglass"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 895673354878660,
+							"parameters": {
+								"variable": "LimitTime",
+								"comparison": 5,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 448228955204742,
+							"parameters": {
+								"variable": "LimitTime",
+								"value": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Hourglass",
+							"sid": 538670771205322
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 879044785561524,
+							"parameters": {
+								"audio-file": "Clock_ticking",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 603252563028778
 				},
 				{
-					"id": "flash",
-					"objectClass": "Caution",
-					"sid": 551920219094339,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "2.0"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 832902377303079,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 704896127349945,
+							"parameters": {
+								"variable": "LimitTime",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 689999079144227
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 738428894423547,
+							"parameters": {
+								"variable": "LimitTime",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 215732727777300,
+							"parameters": {
+								"layout": "Layout 1"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 655086905464355
+						}
+					],
+					"sid": 919453466589942
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ShotBullet",
+							"sid": 299007764193664,
+							"parameters": {
+								"object": "Hourglass"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 298819754933778,
+							"parameters": {
+								"variable": "LimitTime",
+								"value": "5"
+							}
+						}
+					],
+					"sid": 454446246376443
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 170486821579635,
+							"parameters": {
+								"variable": "LimitTime",
+								"comparison": 3,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 302691801094149,
+							"parameters": {
+								"object": "PlayerTeen",
+								"layer": "\"GAME\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Player",
+							"sid": 427395295505540
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "PlayerTeen",
+							"sid": 893476964595958,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "630"
+							}
+						},
+						{
+							"id": "set-double-jump",
+							"objectClass": "PlayerTeen",
+							"sid": 419209646883159,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-jump-strength",
+							"objectClass": "PlayerTeen",
+							"sid": 436012451478535,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "950"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PlayerTeen",
+							"sid": 767915897613440,
+							"behaviorType": "ScrollTo2",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "PlayerTeen",
+							"sid": 773059956495847,
+							"parameters": {
+								"width": "54",
+								"height": "94"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "TimerHealthBarSprite",
+							"sid": 971046364457800,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 748635412471374
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 556309260663447,
+							"parameters": {
+								"variable": "LimitTime",
+								"comparison": 3,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "PlayerTeen",
+							"sid": 308784712494343,
+							"parameters": {
+								"object": "PlayerOld",
+								"layer": "\"GAME\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PlayerTeen",
+							"sid": 377827942945768
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "PlayerOld",
+							"sid": 431000136282808,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "230"
+							}
+						},
+						{
+							"id": "set-double-jump",
+							"objectClass": "PlayerOld",
+							"sid": 927915250479645,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-jump-strength",
+							"objectClass": "PlayerOld",
+							"sid": 874208719565558,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "380"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PlayerOld",
+							"sid": 208392114261309,
+							"behaviorType": "ScrollTo2",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "PlayerOld",
+							"sid": 692972638624101,
+							"parameters": {
+								"width": "54",
+								"height": "90"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "TimerHealthBarSprite",
+							"sid": 312033047459242,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 333037070034622
+				},
+				{
+					"eventType": "comment",
+					"text": "Timerbar"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 911827166593911
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "TimerHealthBarSprite",
+							"sid": 441098026471355,
+							"parameters": {
+								"width": "100*(LimitTime/10)"
+							}
+						}
+					],
+					"sid": 715011361799602
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 839664921340676,
+							"parameters": {
+								"variable": "LimitTime",
+								"comparison": 0,
+								"value": "23"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Caution",
+							"sid": 567445235635316,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "Caution",
+							"sid": 366072663930780,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "2.0"
+							}
+						}
+					],
+					"sid": 949332296729221
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 763086662241617,
+							"parameters": {
+								"variable": "LimitTime",
+								"comparison": 0,
+								"value": "13"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Caution",
+							"sid": 229532712366500,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "Caution",
+							"sid": 882584148886098,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "2.0"
+							}
+						}
+					],
+					"sid": 133271547009412
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-flash-ended",
+							"objectClass": "Caution",
+							"sid": 832746036280677,
+							"behaviorType": "Flash"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Caution",
+							"sid": 337464217972564,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 484734436906317
 				}
 			],
-			"sid": 931576726443175
+			"sid": 669604782138790
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Dead, Not Big Surprise",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-flash-ended",
-					"objectClass": "Caution",
-					"sid": 643488387666981,
-					"behaviorType": "Flash"
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Family1",
+							"sid": 481061480381196,
+							"parameters": {
+								"object": "Death"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 503671032236683
+						}
+					],
+					"sid": 889179101383001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Family1",
+							"sid": 150995099637371,
+							"parameters": {
+								"object": "saw"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 692972379376868
+						}
+					],
+					"sid": 225609962532019
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Family1",
+							"sid": 495363584151686,
+							"parameters": {
+								"object": "spike"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 779202958508853
+						}
+					],
+					"sid": 311499094608985
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Family1",
+							"sid": 158706638604912,
+							"parameters": {
+								"object": "water"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 476722456889185
+						}
+					],
+					"sid": 401827175426649
 				}
 			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Caution",
-					"sid": 747458942279958,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 448560365035099
+			"sid": 290591695778622
 		}
 	],
 	"sid": 477804456748490

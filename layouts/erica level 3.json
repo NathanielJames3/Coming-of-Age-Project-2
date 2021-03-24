@@ -1922,8 +1922,7 @@
 					},
 					"uid": 199,
 					"instanceVariables": {
-						"Slingshot": 0,
-						"Shots": 0
+						"Slingshot": 0
 					},
 					"behaviors": {
 						"ScrollTo2": {
