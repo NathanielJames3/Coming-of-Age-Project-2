@@ -1,0 +1,63 @@
+{
+	"name": "Caution",
+	"plugin-id": "Sprite",
+	"sid": 105224934432997,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 568967214253321
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 890,
+						"height": 650,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\tori0\\Downloads\\8-bit-caution-symbol-.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1578940,
+						"collisionPoly": {
+							"points": [
+								0.30337078651685395,
+								0.4153846153846154,
+								0.5,
+								0.06153846153846154,
+								0.7067415730337079,
+								0.4,
+								0.7404494382022472,
+								0.5,
+								0.8752808988764045,
+								0.8292307692307692,
+								0.5,
+								0.8907692307692308,
+								0.12359550561797752,
+								0.8292307692307692,
+								0.2696629213483146,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 794666751489065,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

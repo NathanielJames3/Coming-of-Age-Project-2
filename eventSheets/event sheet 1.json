@@ -833,6 +833,14 @@
 						"width": "54",
 						"height": "94"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TimerHealthBarSprite",
+					"sid": 872252045815932,
+					"parameters": {
+						"frame-number": "1"
+					}
 				}
 			],
 			"sid": 315806455248524
@@ -912,6 +920,14 @@
 						"width": "54",
 						"height": "90"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TimerHealthBarSprite",
+					"sid": 226234406984896,
+					"parameters": {
+						"frame-number": "2"
+					}
 				}
 			],
 			"sid": 963213863540802
@@ -944,139 +960,149 @@
 			"sid": 773818778117536
 		},
 		{
-			"eventType": "comment",
-			"text": "Clouds spawn and float then destroy offscreen"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Clouds",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 153326977889546
-				}
-			],
-			"actions": [
-				{
-					"id": "move-at-angle",
-					"objectClass": "Cloud1",
-					"sid": 186174243131312,
-					"parameters": {
-						"angle": "0",
-						"distance": "1.5"
-					}
+					"eventType": "comment",
+					"text": "Clouds spawn and float then destroy offscreen"
 				},
 				{
-					"id": "move-at-angle",
-					"objectClass": "Cloud2",
-					"sid": 450900144959363,
-					"parameters": {
-						"angle": "0",
-						"distance": "2"
-					}
-				}
-			],
-			"sid": 635819001266887
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 641766386166717
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "Cloud1",
+							"sid": 277122932037842,
+							"parameters": {
+								"angle": "0",
+								"distance": "1.5"
+							}
+						},
+						{
+							"id": "move-at-angle",
+							"objectClass": "Cloud2",
+							"sid": 338451661625458,
+							"parameters": {
+								"angle": "0",
+								"distance": "2"
+							}
+						}
+					],
+					"sid": 208866798533903
+				},
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 370840452489600,
-					"parameters": {
-						"interval-seconds": "10"
-					}
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 321583085507039,
+							"parameters": {
+								"interval-seconds": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 591240290915090,
+							"parameters": {
+								"object-to-create": "Cloud1",
+								"layer": "0",
+								"x": "-280",
+								"y": "random(-32,200)",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 868583992728026
+				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 118305032040927,
-					"parameters": {
-						"object-to-create": "Cloud1",
-						"layer": "0",
-						"x": "-280",
-						"y": "random(-32,200)",
-						"create-hierarchy": false
-					}
-				}
-			],
-			"sid": 300748546066109
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 867993373566484,
+							"parameters": {
+								"interval-seconds": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 745029613375843,
+							"parameters": {
+								"object-to-create": "Cloud2",
+								"layer": "0",
+								"x": "-280",
+								"y": "random(-32,200)",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 909448097849935
+				},
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 839241676210818,
-					"parameters": {
-						"interval-seconds": "20"
-					}
-				}
-			],
-			"actions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Cloud1",
+							"sid": 607956694456648,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "LayoutWidth"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Cloud1",
+							"sid": 546921609610833
+						}
+					],
+					"sid": 114828195523743
+				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 942169488647409,
-					"parameters": {
-						"object-to-create": "Cloud2",
-						"layer": "0",
-						"x": "-280",
-						"y": "random(-32,200)",
-						"create-hierarchy": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "Cloud2",
+							"sid": 788231273962644,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "LayoutWidth"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Cloud2",
+							"sid": 896072716500960
+						}
+					],
+					"sid": 308050841356798
 				}
 			],
-			"sid": 740903090277434
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "Cloud1",
-					"sid": 314974283990110,
-					"parameters": {
-						"comparison": 4,
-						"x-co-ordinate": "LayoutWidth"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Cloud1",
-					"sid": 176925005672228
-				}
-			],
-			"sid": 649156437851799
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-x",
-					"objectClass": "Cloud2",
-					"sid": 492133216069397,
-					"parameters": {
-						"comparison": 4,
-						"x-co-ordinate": "LayoutWidth"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Cloud2",
-					"sid": 638449092295063
-				}
-			],
-			"sid": 780041911900481
+			"sid": 363267438617778
 		},
 		{
 			"eventType": "block",
@@ -1121,6 +1147,10 @@
 			"sid": 648088374887459
 		},
 		{
+			"eventType": "comment",
+			"text": "Music"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1143,6 +1173,127 @@
 				}
 			],
 			"sid": 414321815191788
+		},
+		{
+			"eventType": "comment",
+			"text": "Timerbar"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 740999842051977
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "TimerHealthBarSprite",
+					"sid": 514713683914786,
+					"parameters": {
+						"width": "100*(LimitTime/10)"
+					}
+				}
+			],
+			"sid": 830939358235979
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 467843490028227,
+					"parameters": {
+						"variable": "LimitTime",
+						"comparison": 0,
+						"value": "23"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Caution",
+					"sid": 359621776730616,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Caution",
+					"sid": 452812888408827,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "2.0"
+					}
+				}
+			],
+			"sid": 689258589021005
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 987791481870039,
+					"parameters": {
+						"variable": "LimitTime",
+						"comparison": 0,
+						"value": "13"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Caution",
+					"sid": 846753469804318,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Caution",
+					"sid": 551920219094339,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "2.0"
+					}
+				}
+			],
+			"sid": 931576726443175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-flash-ended",
+					"objectClass": "Caution",
+					"sid": 643488387666981,
+					"behaviorType": "Flash"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Caution",
+					"sid": 747458942279958,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 448560365035099
 		}
 	],
 	"sid": 477804456748490

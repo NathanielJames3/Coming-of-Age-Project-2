@@ -1769,6 +1769,68 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TimerHealthBarSprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 213,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 300,
+						"y": 2,
+						"width": 750,
+						"height": 31,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Caution",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 214,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 811,
+						"y": 36,
+						"width": 91.14412189366462,
+						"height": 66.56593172009218,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 245458928421668,
