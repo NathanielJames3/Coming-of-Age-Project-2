@@ -350,7 +350,6 @@
 							"id": "set-animation",
 							"objectClass": "Player",
 							"sid": 828594579745020,
-							"disabled": true,
 							"parameters": {
 								"animation": "\"Walk\"",
 								"from": "beginning"
