@@ -345,6 +345,16 @@
 							"parameters": {
 								"state": "not-mirrored"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 828594579745020,
+							"disabled": true,
+							"parameters": {
+								"animation": "\"Walk\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 627336029123767
