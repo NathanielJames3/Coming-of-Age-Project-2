@@ -350,7 +350,6 @@
 							"id": "set-animation",
 							"objectClass": "Player",
 							"sid": 828594579745020,
-							"disabled": true,
 							"parameters": {
 								"animation": "\"Walk\"",
 								"from": "beginning"
@@ -413,7 +412,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 530607114455235,
+							"sid": 478970511697050,
 							"parameters": {
 								"key": 38
 							}
@@ -423,15 +422,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Player",
-							"sid": 843817118110983,
+							"sid": 899750392377174,
 							"parameters": {
 								"animation": "\"Jump\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 473207957228827,
-					"disabled": true
+					"sid": 153312181370248
 				},
 				{
 					"eventType": "block",
