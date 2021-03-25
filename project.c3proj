@@ -47,6 +47,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -72,6 +80,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -82,14 +98,6 @@
 			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
-			"author": "Scirra",
-			"version": "r234.4",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
@@ -157,7 +165,8 @@
 			"Destroy",
 			"Text",
 			"TimerHealthBarSprite",
-			"Caution"
+			"Caution",
+			"Mouse"
 		],
 		"subfolders": []
 	},
@@ -244,7 +253,13 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "PressStart2P-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 686973505969398
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

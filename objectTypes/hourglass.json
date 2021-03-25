@@ -4,31 +4,37 @@
 	"sid": 747720139760196,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 715344280010959
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
+						"width": 112,
+						"height": 192,
+						"originX": 0.45535714285714285,
+						"originY": 0.4479166666666667,
+						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Hourglass.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6563186,
+						"imageSpriteId": 7399324,
 						"collisionPoly": {
 							"points": [
-								0.08800000000000002,
-								0.06400000000000002,
-								0.9119999999999999,
-								0.08400000000000002,
-								0.8679999999999999,
-								0.8199999999999998,
-								0.09999999999999998,
-								0.7919999999999999
+								0,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								0.9802083333333332
 							]
 						},
 						"useCollisionPoly": true,

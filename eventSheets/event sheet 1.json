@@ -350,6 +350,7 @@
 							"id": "set-animation",
 							"objectClass": "Player",
 							"sid": 828594579745020,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"Walk\"",
 								"from": "beginning"
@@ -1297,6 +1298,27 @@
 				}
 			],
 			"sid": 290591695778622
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 528806865247618
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 160050293387012,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				}
+			],
+			"sid": 604452887768601
 		}
 	],
 	"sid": 477804456748490
