@@ -97,63 +97,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {
-						"Slingshot": 0,
-						"Shots": 0
-					},
-					"behaviors": {
-						"ScrollTo2": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"Platform": {
-							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": true,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 73.78461538461539,
-						"y": 175.26106194690266,
-						"width": 54.597274000000006,
-						"height": 92.873478,
-						"originX": 1.146153846153846,
-						"originY": 0.6415929203539823,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Platform",
 					"properties": {
 						"initially-visible": true,
@@ -380,10 +323,25 @@
 					},
 					"uid": 10,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 5,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 1670,
-						"y": 194,
+						"x": 1593,
+						"y": 203,
 						"width": 43.199999999999996,
 						"height": 48.959999999999994,
 						"originX": 1.3433333333333333,
@@ -450,14 +408,29 @@
 					},
 					"uid": 13,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 5,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 877,
-						"y": 621,
-						"width": 102,
-						"height": 112,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 863,
+						"y": 607,
+						"width": 45.696,
+						"height": 86.016,
+						"originX": 0.45535714285714285,
+						"originY": 0.4479166666666667,
 						"color": [
 							1,
 							1,
@@ -481,10 +454,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 299,
-						"y": 570,
-						"width": 150,
-						"height": 134,
+						"x": 334,
+						"y": 575,
+						"width": 330,
+						"height": 209.04000000000002,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -544,14 +517,29 @@
 					},
 					"uid": 17,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 20,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 44,
-						"y": 717,
-						"width": 88,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 53,
+						"y": 703,
+						"width": 116.03109089105723,
+						"height": 150.49904867114736,
+						"originX": 0.6774193548387096,
+						"originY": 0.5444444444444444,
 						"color": [
 							1,
 							1,
@@ -674,8 +662,7 @@
 					},
 					"uid": 22,
 					"instanceVariables": {
-						"Slingshot": 0,
-						"Shots": 0
+						"Slingshot": 0
 					},
 					"behaviors": {
 						"ScrollTo2": {
@@ -731,8 +718,7 @@
 					},
 					"uid": 187,
 					"instanceVariables": {
-						"Slingshot": 0,
-						"Shots": 0
+						"Slingshot": 0
 					},
 					"behaviors": {
 						"ScrollTo2": {
@@ -800,6 +786,62 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {
+						"Slingshot": 0
+					},
+					"behaviors": {
+						"ScrollTo2": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 82.66734680370874,
+						"y": 147.11384931232544,
+						"width": 119.49511594646148,
+						"height": 127.06438096807925,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 206709604464449,
@@ -856,8 +898,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2,
-						"y": 2,
+						"x": -345,
+						"y": 145,
 						"width": 294,
 						"height": 195,
 						"originX": 0,
@@ -877,15 +919,15 @@
 					"properties": {
 						"text": "Time:",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "PressStart2P-Regular",
 						"size": 15,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -898,8 +940,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 251,
-						"y": -3,
+						"x": 9,
+						"y": 4,
 						"width": 294,
 						"height": 195,
 						"originX": 0,
@@ -927,7 +969,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 306,
+						"x": 118,
 						"y": 0,
 						"width": 750,
 						"height": 31,
