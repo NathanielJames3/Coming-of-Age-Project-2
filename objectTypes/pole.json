@@ -1,0 +1,37 @@
+{
+	"name": "pole",
+	"plugin-id": "Sprite",
+	"sid": 966813215361797,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 7,
+						"height": 155,
+						"originX": 2.2857142857142856,
+						"originY": 0.3032258064516129,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7650872,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 183209063073721,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

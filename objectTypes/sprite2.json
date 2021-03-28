@@ -1,0 +1,62 @@
+{
+	"name": "Sprite2",
+	"plugin-id": "Sprite",
+	"sid": 324045636376367,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "warpripple",
+			"name": "WarpRipple"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 258,
+						"height": 258,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Miss America\\Desktop\\Free Platform Game Assets\\Platform Game Assets\\Water Animation\\png\\2x\\image 3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5418764,
+						"collisionPoly": {
+							"points": [
+								0.08139534883720931,
+								0.08139534883720931,
+								0.5,
+								0.011627906976744186,
+								0.9341085271317829,
+								0.06201550387596899,
+								0.9922480620155039,
+								0.5,
+								0.9922480620155039,
+								0.9922480620155039,
+								0.5,
+								0.9922480620155039,
+								0.003875968992248062,
+								0.9922480620155039,
+								0.003875968992248062,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 716078702539624,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
