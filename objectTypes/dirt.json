@@ -1,0 +1,57 @@
+{
+	"name": "dirt",
+	"plugin-id": "Sprite",
+	"sid": 907662047826427,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 469,
+						"height": 489,
+						"originX": 0.5266524520255863,
+						"originY": 0.5255623721881391,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2235805,
+						"collisionPoly": {
+							"points": [
+								0.026297085998578534,
+								0.06748466257668712,
+								0.5266524520255863,
+								0.06748466257668712,
+								0.8877043354655294,
+								0.26380368098159507,
+								0.7512437810945273,
+								0.5255623721881391,
+								0.7512437810945273,
+								0.5869120654396728,
+								0.5266524520255863,
+								0.7177914110429447,
+								0.16275764036958065,
+								0.7832310838445807,
+								0.16275764036958065,
+								0.5255623721881391
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 376752001532594,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

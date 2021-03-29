@@ -166,7 +166,22 @@
 			"Text",
 			"TimerHealthBarSprite",
 			"Caution",
-			"Mouse"
+			"Mouse",
+			"solid",
+			"solid1",
+			"solid2",
+			"circle",
+			"solid3",
+			"solid5",
+			"circles1",
+			"solid6",
+			"solid7",
+			"dirt",
+			"solid8",
+			"circles3",
+			"platform1",
+			"solid9",
+			"circles4"
 		],
 		"subfolders": []
 	},
@@ -187,7 +202,11 @@
 			"Erica Level 2",
 			"Erica Level 3",
 			"Erica Level 4",
-			"Ending"
+			"Ending",
+			"Level 1 revised",
+			"Level 2 revised",
+			"Level 3 revised",
+			"Level 4 revised"
 		],
 		"subfolders": []
 	},

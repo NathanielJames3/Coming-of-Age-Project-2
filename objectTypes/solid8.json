@@ -1,0 +1,49 @@
+{
+	"name": "solid8",
+	"plugin-id": "Sprite",
+	"sid": 684285066780982,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 249,
+						"height": 64,
+						"originX": 0.5060240963855421,
+						"originY": 0.5468750000000001,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3316640,
+						"collisionPoly": {
+							"points": [
+								0.004016064257028112,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.004016064257028112,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 113976766366463,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

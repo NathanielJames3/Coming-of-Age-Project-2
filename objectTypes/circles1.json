@@ -1,0 +1,37 @@
+{
+	"name": "circles1",
+	"plugin-id": "Sprite",
+	"sid": 585695897816579,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 212,
+						"height": 212,
+						"originX": 0.4811320754716981,
+						"originY": 0.5047169811320755,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 824237,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 366275908664153,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
