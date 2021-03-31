@@ -194,16 +194,11 @@
 		"items": [
 			"Title",
 			"Info",
-			"Layout 1",
-			"Erica Level 1",
-			"Erica Level 2",
-			"Erica Level 3",
-			"Erica Level 4",
-			"Ending",
 			"Level 1 revised",
 			"Level 2 revised",
 			"Level 3 revised",
-			"Level 4 revised"
+			"Level 4 revised",
+			"Ending"
 		],
 		"subfolders": []
 	},
