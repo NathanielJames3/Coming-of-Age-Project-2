@@ -2,7 +2,35 @@
 	"name": "Level 4 revised",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "BG",
+			"overriden": 0,
+			"instances": [],
+			"sid": 812000488219827,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "GAME",
 			"overriden": 0,
 			"instances": [
 				{
@@ -680,10 +708,10 @@
 						}
 					},
 					"world": {
-						"x": 1827,
-						"y": -49,
-						"width": 85,
-						"height": 142,
+						"x": 1894,
+						"y": 195,
+						"width": 75,
+						"height": 125,
 						"originX": 0.5234375,
 						"originY": 0.37766990291262137,
 						"color": [
@@ -731,12 +759,41 @@
 						}
 					},
 					"world": {
-						"x": 1839,
-						"y": 172,
-						"width": 91,
-						"height": 153,
+						"x": 1818,
+						"y": 226,
+						"width": 70,
+						"height": 125,
 						"originX": 0.6254355400696864,
 						"originY": 0.60412147505423,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Destroy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2193,
+						"y": 377,
+						"width": 932,
+						"height": 243,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -763,7 +820,7 @@
 				1,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -897,8 +954,8 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

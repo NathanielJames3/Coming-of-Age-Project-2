@@ -782,6 +782,11 @@
 					"id": "destroy",
 					"objectClass": "Target",
 					"sid": 122534080902672
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ShotBullet",
+					"sid": 292872100791637
 				}
 			],
 			"sid": 628410647145216
@@ -1082,6 +1087,14 @@
 							"id": "reset-global-variables",
 							"objectClass": "System",
 							"sid": 655086905464355
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 239009525318172,
+							"parameters": {
+								"layout": "Title"
+							}
 						}
 					],
 					"sid": 919453466589942
