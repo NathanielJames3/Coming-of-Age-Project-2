@@ -19,6 +19,484 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Old",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 811661068833174,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerOld",
+									"sid": 490026547643669,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 528411039922472
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 800399465753227,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerOld",
+									"sid": 346648315047905,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 548184446607167
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 845824687185331,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerOld",
+									"sid": 144964411216855,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 533953782647194
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 517241880318113,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerOld",
+									"sid": 798619443831813,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 352077203508379
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "ShotBullet",
+									"sid": 656275846943306
+								},
+								{
+									"id": "is-mirrored",
+									"objectClass": "PlayerOld",
+									"sid": 255392588371416
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "ShotBullet",
+									"sid": 772430658820381,
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 919587378069303
+						}
+					],
+					"sid": 462043349921428
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Teen",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "ShotBullet",
+									"sid": 675346039216093
+								},
+								{
+									"id": "is-mirrored",
+									"objectClass": "PlayerTeen",
+									"sid": 536237300941713
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "ShotBullet",
+									"sid": 163930316222817,
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 892692806061785
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 496934129489539,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerTeen",
+									"sid": 636094489886501,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 525071277490982
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 299782403387078,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerTeen",
+									"sid": 621844899941486,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 731000896686652
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 958833797070363,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerTeen",
+									"sid": 335186748102285,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 274062598251334
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 933777153847593,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerTeen",
+									"sid": 454068325345537,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 960792701186796
+						}
+					],
+					"sid": 612373121884298
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Kid",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 244393375515530,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 468440922276878,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 147484401425748
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 928510947529796,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 639491915651721,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 878220560411103
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "ShotBullet",
+									"sid": 586112710530716
+								},
+								{
+									"id": "is-mirrored",
+									"objectClass": "Player",
+									"sid": 998675000535279
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "ShotBullet",
+									"sid": 763324407429738,
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 639493254097614
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 304126556689673,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Player",
+									"sid": 251631010576967,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 859231249624116
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 662204912896372,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Player",
+									"sid": 367326773540423,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 274419423427825
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 115436243541358,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 575763812186023,
+									"parameters": {
+										"animation": "\"Jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 987877521125022
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 434880794926643,
+									"parameters": {
+										"key": 90
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 335017330096115,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "330"
+									}
+								}
+							],
+							"sid": 352957838666714
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 340199654424703,
+									"parameters": {
+										"key": 90
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 654908216050717,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "630"
+									}
+								}
+							],
+							"sid": 764374567437010
+						}
+					],
+					"sid": 786356270073698
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -161,84 +639,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-created",
-							"objectClass": "ShotBullet",
-							"sid": 275492143302963
-						},
-						{
-							"id": "is-mirrored",
-							"objectClass": "Player",
-							"sid": 290687411123178
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle",
-							"objectClass": "ShotBullet",
-							"sid": 338217623110880,
-							"parameters": {
-								"angle": "180"
-							}
-						}
-					],
-					"sid": 520788165279243
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-created",
-							"objectClass": "ShotBullet",
-							"sid": 231882745994807
-						},
-						{
-							"id": "is-mirrored",
-							"objectClass": "PlayerOld",
-							"sid": 671057444751496
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle",
-							"objectClass": "ShotBullet",
-							"sid": 116520665953166,
-							"parameters": {
-								"angle": "180"
-							}
-						}
-					],
-					"sid": 406409400652075
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-created",
-							"objectClass": "ShotBullet",
-							"sid": 170580639318256
-						},
-						{
-							"id": "is-mirrored",
-							"objectClass": "PlayerTeen",
-							"sid": 456823670208193
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle",
-							"objectClass": "ShotBullet",
-							"sid": 430727691943789,
-							"parameters": {
-								"angle": "180"
-							}
-						}
-					],
-					"sid": 129061595200285
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "is-outside-layout",
 							"objectClass": "ShotBullet",
 							"sid": 535622342098908
@@ -252,235 +652,6 @@
 						}
 					],
 					"sid": 625661239350935
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 626246723194901,
-							"parameters": {
-								"key": 37
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "Player",
-							"sid": 492739377445519,
-							"parameters": {
-								"state": "mirrored"
-							}
-						}
-					],
-					"sid": 953423228286408
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 744308612866783,
-							"parameters": {
-								"key": 37
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "PlayerTeen",
-							"sid": 634731190509576,
-							"parameters": {
-								"state": "mirrored"
-							}
-						}
-					],
-					"sid": 749993359656380
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 538392268669037,
-							"parameters": {
-								"key": 37
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "PlayerOld",
-							"sid": 807900639388810,
-							"parameters": {
-								"state": "mirrored"
-							}
-						}
-					],
-					"sid": 424719196706337
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 991539742488565,
-							"parameters": {
-								"key": 39
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "Player",
-							"sid": 320382226518004,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 828594579745020,
-							"parameters": {
-								"animation": "\"Walk\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 627336029123767
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 703047697490553,
-							"parameters": {
-								"key": 39
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "PlayerTeen",
-							"sid": 830212792229996,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						}
-					],
-					"sid": 974724750264811
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 678822954261440,
-							"parameters": {
-								"key": 39
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-mirrored",
-							"objectClass": "PlayerOld",
-							"sid": 397387007920733,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						}
-					],
-					"sid": 673107934085642
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 478970511697050,
-							"parameters": {
-								"key": 38
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 899750392377174,
-							"parameters": {
-								"animation": "\"Jump\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 153312181370248
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 950511656181595,
-							"parameters": {
-								"key": 90
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-max-speed",
-							"objectClass": "Player",
-							"sid": 497971894909270,
-							"behaviorType": "Platform",
-							"parameters": {
-								"max-speed": "330"
-							}
-						}
-					],
-					"sid": 670600550950314
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 597474776636312,
-							"parameters": {
-								"key": 90
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-max-speed",
-							"objectClass": "Player",
-							"sid": 902698472082899,
-							"behaviorType": "Platform",
-							"parameters": {
-								"max-speed": "630"
-							}
-						}
-					],
-					"sid": 390726067891430
 				},
 				{
 					"eventType": "block",
