@@ -1,20 +1,20 @@
 {
-	"name": "WallBG",
+	"name": "BG3",
 	"plugin-id": "TiledBg",
-	"sid": 563795445561693,
+	"sid": 637064909948187,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 2000,
-		"height": 1083,
+		"width": 1000,
+		"height": 1000,
 		"originX": 0.5,
 		"originY": 0.5,
-		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\wall.png",
+		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\SkyBG2.png",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 4312979,
+		"imageSpriteId": 1210565,
 		"useCollisionPoly": true
 	}
 }

@@ -299,7 +299,7 @@
 								{
 									"id": "on-key-pressed",
 									"objectClass": "Keyboard",
-									"sid": 244393375515530,
+									"sid": 327036701967761,
 									"parameters": {
 										"key": 37
 									}
@@ -307,16 +307,15 @@
 							],
 							"actions": [
 								{
-									"id": "set-animation",
+									"id": "set-mirrored",
 									"objectClass": "Player",
-									"sid": 468440922276878,
+									"sid": 970825895386183,
 									"parameters": {
-										"animation": "\"Walk\"",
-										"from": "beginning"
+										"state": "mirrored"
 									}
 								}
 							],
-							"sid": 147484401425748
+							"sid": 226669188624019
 						},
 						{
 							"eventType": "block",
@@ -324,7 +323,7 @@
 								{
 									"id": "on-key-pressed",
 									"objectClass": "Keyboard",
-									"sid": 928510947529796,
+									"sid": 314095613910707,
 									"parameters": {
 										"key": 39
 									}
@@ -332,16 +331,15 @@
 							],
 							"actions": [
 								{
-									"id": "set-animation",
+									"id": "set-mirrored",
 									"objectClass": "Player",
-									"sid": 639491915651721,
+									"sid": 643552367670820,
 									"parameters": {
-										"animation": "\"Walk\"",
-										"from": "beginning"
+										"state": "not-mirrored"
 									}
 								}
 							],
-							"sid": 878220560411103
+							"sid": 310144736796367
 						},
 						{
 							"eventType": "block",
@@ -368,79 +366,6 @@
 								}
 							],
 							"sid": 639493254097614
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 304126556689673,
-									"parameters": {
-										"key": 37
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "Player",
-									"sid": 251631010576967,
-									"parameters": {
-										"state": "mirrored"
-									}
-								}
-							],
-							"sid": 859231249624116
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 662204912896372,
-									"parameters": {
-										"key": 39
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "Player",
-									"sid": 367326773540423,
-									"parameters": {
-										"state": "not-mirrored"
-									}
-								}
-							],
-							"sid": 274419423427825
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 115436243541358,
-									"parameters": {
-										"key": 38
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 575763812186023,
-									"parameters": {
-										"animation": "\"Jump\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 987877521125022
 						},
 						{
 							"eventType": "block",
@@ -492,6 +417,124 @@
 								}
 							],
 							"sid": 764374567437010
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-stopped",
+									"objectClass": "Player",
+									"sid": 997060571351234,
+									"disabled": true,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 970234569620795,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 717645736504789,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Player",
+									"sid": 343287164193464,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 366198381735781,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 674049958252811
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-jumping",
+									"objectClass": "Player",
+									"sid": 118856458210284,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 942778917606224,
+									"parameters": {
+										"animation": "\"Jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 789362029673842
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-falling",
+									"objectClass": "Player",
+									"sid": 488916366032022,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 261607786061091,
+									"parameters": {
+										"animation": "\"Jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 189190061267589
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Player",
+									"sid": 570540235775924,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 344222625797726,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 545008979993631
 						}
 					],
 					"sid": 786356270073698

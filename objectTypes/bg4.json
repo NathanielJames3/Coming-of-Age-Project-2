@@ -1,20 +1,20 @@
 {
-	"name": "TiledBackground",
+	"name": "BG4",
 	"plugin-id": "TiledBg",
-	"sid": 280724847087993,
+	"sid": 204958780634149,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 250,
-		"height": 250,
+		"width": 1000,
+		"height": 1000,
 		"originX": 0.5,
 		"originY": 0.5,
-		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\stars.png",
+		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\SkyBG3.png",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9464372,
+		"imageSpriteId": 8340373,
 		"useCollisionPoly": true
 	}
 }

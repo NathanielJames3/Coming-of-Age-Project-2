@@ -266,6 +266,70 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1
+					},
+					{
+						"width": 369,
+						"height": 401,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Jump_Frame_Fixed.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8129173,
+						"collisionPoly": {
+							"points": [
+								0.1978319783197832,
+								0.18204488778054864,
+								0.5,
+								0.10473815461346633,
+								0.6504065040650406,
+								0.3192019950124688,
+								0.6043360433604336,
+								0.5,
+								0.6205962059620597,
+								0.6508728179551122,
+								0.5,
+								0.9052369077306733,
+								0.2981029810298103,
+								0.7231920199501247,
+								0.27371273712737126,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 369,
+						"height": 401,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Jump_Frame_Fixed.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 898014,
+						"collisionPoly": {
+							"points": [
+								0.1978319783197832,
+								0.18204488778054864,
+								0.5,
+								0.10473815461346633,
+								0.6504065040650406,
+								0.3192019950124688,
+								0.6043360433604336,
+								0.5,
+								0.6205962059620597,
+								0.6508728179551122,
+								0.5,
+								0.9052369077306733,
+								0.2981029810298103,
+								0.7231920199501247,
+								0.27371273712737126,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
 					}
 				],
 				"sid": 496845883293693,

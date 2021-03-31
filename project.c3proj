@@ -135,14 +135,6 @@
 			"RequirementDoor",
 			"PlayerTeen",
 			"PlayerOld",
-			"WallBG",
-			"Bed",
-			"Bookshelf",
-			"Chair",
-			"Nightstand",
-			"Poster",
-			"Picture",
-			"TiledBackground",
 			"TiledBackground3",
 			"Sprite2",
 			"Sprite",
@@ -181,7 +173,10 @@
 			"circles3",
 			"platform1",
 			"solid9",
-			"circles4"
+			"circles4",
+			"BG3",
+			"BG4",
+			"TiledBackground"
 		],
 		"subfolders": []
 	},
