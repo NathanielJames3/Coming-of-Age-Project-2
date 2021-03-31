@@ -126,8 +126,8 @@
 						}
 					},
 					"world": {
-						"x": 469,
-						"y": 184.77011494252875,
+						"x": 477,
+						"y": 167,
 						"width": 274,
 						"height": 37,
 						"originX": 0.5291970802919708,
@@ -1334,8 +1334,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 132,
-						"y": 212,
+						"x": 140,
+						"y": 194,
 						"width": 110,
 						"height": 105,
 						"originX": 0.47641509433962265,
@@ -1392,8 +1392,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 899,
-						"y": 164,
+						"x": 907,
+						"y": 146,
 						"width": 110,
 						"height": 105,
 						"originX": 0.47641509433962265,
@@ -1461,6 +1461,139 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"global": false
+		},
+		{
+			"name": "UI",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "TimeText",
+					"properties": {
+						"text": "Time:",
+						"enable-bbcode": true,
+						"font": "PressStart2P-Regular",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 354,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 4,
+						"y": 15,
+						"width": 294,
+						"height": 195,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TimerHealthBarSprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 355,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 113,
+						"y": 11,
+						"width": 750,
+						"height": 31,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Caution",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 356,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 793,
+						"y": 57,
+						"width": 91.14412189366462,
+						"height": 66.56593172009218,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 161470853373611,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
 		}
 	],
 	"sid": 493061042994358,
@@ -1469,5 +1602,5 @@
 	"width": 1708,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Event sheet 1"
 }
