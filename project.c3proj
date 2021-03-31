@@ -176,7 +176,9 @@
 			"circles4",
 			"BG3",
 			"BG4",
-			"TiledBackground"
+			"TiledBackground",
+			"ground",
+			"ground1"
 		],
 		"subfolders": []
 	},
