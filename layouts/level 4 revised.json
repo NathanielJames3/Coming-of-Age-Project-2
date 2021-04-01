@@ -34,6 +34,39 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "BG4",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 36,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1713,
+						"y": 643,
+						"width": 1717,
+						"height": 581,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "platform1",
 					"properties": {
 						"initially-visible": true,
@@ -487,9 +520,9 @@
 						}
 					},
 					"world": {
-						"x": 61,
-						"y": 300,
-						"width": 91.06527752656015,
+						"x": 1665,
+						"y": 277,
+						"width": -91.065278,
 						"height": 118.1169420150441,
 						"originX": 0.6774193548387096,
 						"originY": 0.5444444444444444,
@@ -523,8 +556,8 @@
 						}
 					},
 					"world": {
-						"x": 187,
-						"y": 243,
+						"x": 1563,
+						"y": 310,
 						"width": 84,
 						"height": 609,
 						"originX": 0.5,
@@ -567,8 +600,8 @@
 						}
 					},
 					"world": {
-						"x": 1168,
-						"y": 279,
+						"x": 612,
+						"y": 310,
 						"width": 43.199999999999996,
 						"height": 48.959999999999994,
 						"originX": 1.3433333333333333,
@@ -596,8 +629,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 594,
-						"y": 243,
+						"x": 1310,
+						"y": 239,
 						"width": 88.49630425514812,
 						"height": 56.05838618635204,
 						"originX": 0.5,
@@ -652,9 +685,9 @@
 						}
 					},
 					"world": {
-						"x": 1662,
-						"y": 296,
-						"width": -71.770245,
+						"x": 45.05221464444878,
+						"y": 327.46411901232955,
+						"width": 71.770245,
 						"height": 76.316439,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -708,8 +741,8 @@
 						}
 					},
 					"world": {
-						"x": 1894,
-						"y": 195,
+						"x": -202,
+						"y": 201,
 						"width": 75,
 						"height": 125,
 						"originX": 0.5234375,
@@ -759,8 +792,8 @@
 						}
 					},
 					"world": {
-						"x": 1818,
-						"y": 226,
+						"x": -350,
+						"y": 249,
 						"width": 70,
 						"height": 125,
 						"originX": 0.6254355400696864,
