@@ -1071,10 +1071,10 @@
 						}
 					},
 					"world": {
-						"x": -323,
-						"y": 434,
-						"width": 85,
-						"height": 142,
+						"x": -293.890625,
+						"y": 457.20679611650485,
+						"width": 47,
+						"height": 79,
 						"originX": 0.5234375,
 						"originY": 0.37766990291262137,
 						"color": [
@@ -1122,10 +1122,10 @@
 						}
 					},
 					"world": {
-						"x": -186,
-						"y": 450,
-						"width": 91,
-						"height": 153,
+						"x": -209,
+						"y": 473,
+						"width": 49.00000000000001,
+						"height": 77,
 						"originX": 0.6254355400696864,
 						"originY": 0.60412147505423,
 						"color": [
@@ -1155,47 +1155,6 @@
 						"y": 615,
 						"width": 932,
 						"height": 243,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ShotBullet",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 806,
-						"y": -130,
-						"width": 37,
-						"height": 40,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1422,6 +1381,119 @@
 						"height": 87,
 						"originX": 0.5291970802919708,
 						"originY": 0.011494252873563218,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 82,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -16,
+						"y": 392,
+						"width": 52,
+						"height": 981,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 83,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1730,
+						"y": 443,
+						"width": 52,
+						"height": 981,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ShotBullet",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 84,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1027,
+						"y": -100,
+						"width": 25,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

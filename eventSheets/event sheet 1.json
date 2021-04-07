@@ -1091,9 +1091,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 239009525318172,
+							"sid": 114173180396373,
 							"parameters": {
-								"layout": "Title"
+								"layout": "GameOver"
 							}
 						}
 					],
@@ -1145,6 +1145,17 @@
 							"sid": 302691801094149,
 							"parameters": {
 								"object": "PlayerTeen",
+								"layer": "\"GAME\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 852320233241297,
+							"parameters": {
+								"object": "Particles",
 								"layer": "\"GAME\"",
 								"image-point": "0",
 								"create-hierarchy": false
@@ -1232,6 +1243,17 @@
 							"sid": 308784712494343,
 							"parameters": {
 								"object": "PlayerOld",
+								"layer": "\"GAME\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "PlayerTeen",
+							"sid": 307589012533384,
+							"parameters": {
+								"object": "Particles",
 								"layer": "\"GAME\"",
 								"image-point": "0",
 								"create-hierarchy": false

@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -180,7 +188,10 @@
 			"ground",
 			"ground1",
 			"ground2",
-			"ground4"
+			"ground4",
+			"Sprite3",
+			"Particles",
+			"EndDoor"
 		],
 		"subfolders": []
 	},
@@ -200,7 +211,8 @@
 			"Level 2revised",
 			"Level 3 revised",
 			"Level 4 revised",
-			"Ending"
+			"Ending",
+			"GameOver"
 		],
 		"subfolders": []
 	},
