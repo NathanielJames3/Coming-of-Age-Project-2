@@ -265,6 +265,16 @@
 					"name": "the_fade.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 985145692982803
+				},
+				{
+					"name": "DoorOpen1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 294115679160228
+				},
+				{
+					"name": "DoorOpen2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 290951483063966
 				}
 			],
 			"subfolders": []

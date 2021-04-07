@@ -787,6 +787,17 @@
 					"id": "destroy",
 					"objectClass": "ShotBullet",
 					"sid": 292872100791637
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 605370325248717,
+					"parameters": {
+						"audio-file": "DoorOpen2",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 628410647145216
