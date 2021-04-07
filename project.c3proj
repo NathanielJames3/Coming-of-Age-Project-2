@@ -178,7 +178,9 @@
 			"BG4",
 			"TiledBackground",
 			"ground",
-			"ground1"
+			"ground1",
+			"ground2",
+			"ground4"
 		],
 		"subfolders": []
 	},

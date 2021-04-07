@@ -532,10 +532,10 @@
 						}
 					},
 					"world": {
-						"x": 1204.0547445255472,
-						"y": 299.4938271604938,
-						"width": 192.99999999999997,
-						"height": 98,
+						"x": 1166,
+						"y": 338,
+						"width": 190.99999999999997,
+						"height": 59,
 						"originX": 0.5291970802919708,
 						"originY": 0.012345679012345678,
 						"color": [
@@ -640,8 +640,8 @@
 						}
 					},
 					"world": {
-						"x": 1378,
-						"y": 177,
+						"x": 1318,
+						"y": 160,
 						"width": 148.99999999999997,
 						"height": 30,
 						"originX": 0.5291970802919708,
@@ -864,10 +864,10 @@
 						}
 					},
 					"world": {
-						"x": 1276,
-						"y": 484,
-						"width": 129,
-						"height": 32,
+						"x": 1448.934306569343,
+						"y": 386.0740740740741,
+						"width": 200,
+						"height": 45,
 						"originX": 0.5291970802919708,
 						"originY": 0.012345679012345678,
 						"color": [
@@ -1507,6 +1507,78 @@
 						"y": 695,
 						"width": 263,
 						"height": 114,
+						"originX": 0.5291970802919708,
+						"originY": 0.012345679012345678,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "solid3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 815,
+						"y": 498,
+						"width": 184,
+						"height": 36,
+						"originX": 0.5291970802919708,
+						"originY": 0.012345679012345678,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "solid3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1395,
+						"y": 493,
+						"width": 243,
+						"height": 48,
 						"originX": 0.5291970802919708,
 						"originY": 0.012345679012345678,
 						"color": [
