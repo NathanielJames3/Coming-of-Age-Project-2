@@ -193,7 +193,9 @@
 			"EndDoor",
 			"SlingshotUI",
 			"SlingshotAmmo",
-			"block"
+			"block",
+			"promptText",
+			"textPromptbox"
 		],
 		"subfolders": []
 	},

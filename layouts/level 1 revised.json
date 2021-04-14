@@ -104,6 +104,39 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "textPromptbox",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 101,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 942,
+						"y": 137,
+						"width": 476,
+						"height": 186,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "platform1",
 					"properties": {
 						"initially-visible": true,
@@ -916,9 +949,9 @@
 					},
 					"world": {
 						"x": 4667,
-						"y": 225,
+						"y": 218,
 						"width": 107,
-						"height": 447,
+						"height": 461,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -959,8 +992,8 @@
 						}
 					},
 					"world": {
-						"x": 4925,
-						"y": 265,
+						"x": 4929,
+						"y": 288,
 						"width": -91.065278,
 						"height": 118.1169420150441,
 						"originX": 0.6774193548387096,
@@ -1355,10 +1388,10 @@
 						}
 					},
 					"world": {
-						"x": 4943.032727272727,
-						"y": 352.7755102040817,
+						"x": 4938,
+						"y": 368.1224489795918,
 						"width": 205,
-						"height": 119,
+						"height": 128,
 						"originX": 0.5309090909090909,
 						"originY": 0.013605442176870748,
 						"color": [
@@ -1391,9 +1424,9 @@
 						}
 					},
 					"world": {
-						"x": 4592,
+						"x": 4635.534545454546,
 						"y": 412,
-						"width": 341,
+						"width": 423,
 						"height": 92,
 						"originX": 0.5309090909090909,
 						"originY": 0.013605442176870748,
@@ -1908,8 +1941,8 @@
 						}
 					},
 					"world": {
-						"x": 4183,
-						"y": 349,
+						"x": 4161,
+						"y": 486,
 						"width": 236.00953357457342,
 						"height": 74.4477222153961,
 						"originX": 0.5,
@@ -1971,6 +2004,48 @@
 							1
 						],
 						"angle": 1.5754755507687412,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "promptText",
+					"properties": {
+						"text": "Press 'x' to shoot",
+						"enable-bbcode": true,
+						"font": "PressStart2P-Regular",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 100,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1154.238269325061,
+						"y": 180.57740284564954,
+						"width": 244,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

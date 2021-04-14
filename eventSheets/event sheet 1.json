@@ -759,6 +759,59 @@
 						}
 					],
 					"sid": 535810321693372
+				},
+				{
+					"eventType": "comment",
+					"text": "Set prompt text to visible when player is near target"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Family1",
+							"sid": 378034533062968,
+							"parameters": {
+								"object": "textPromptbox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "promptText",
+							"sid": 631262052420487,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 227606643245027
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Family1",
+							"sid": 676658698465507,
+							"parameters": {
+								"object": "textPromptbox"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "promptText",
+							"sid": 551961942151182,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 978793663927603
 				}
 			],
 			"sid": 555358870012969
@@ -777,6 +830,11 @@
 					"id": "destroy",
 					"objectClass": "RequirementDoor",
 					"sid": 754772404116311
+				},
+				{
+					"id": "destroy",
+					"objectClass": "promptText",
+					"sid": 545770759168079
 				}
 			],
 			"sid": 843656939746376

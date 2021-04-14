@@ -72,9 +72,9 @@
 					"properties": {
 						"text": "Congratulations! You managed to wake Juvi up, and now he can live his life like a normal kid, one step at a time.\n\nPress any key to return back.",
 						"enable-bbcode": true,
-						"font": "Stencil",
+						"font": "PressStart2P-Regular",
 						"size": 22,
-						"line-height": 0,
+						"line-height": 15,
 						"bold": false,
 						"italic": false,
 						"color": [
@@ -93,9 +93,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 138,
-						"y": 62,
-						"width": 572,
+						"x": 82,
+						"y": 56,
+						"width": 723,
 						"height": 350,
 						"originX": 0,
 						"originY": 0,

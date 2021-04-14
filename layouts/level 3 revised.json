@@ -97,50 +97,6 @@
 					}
 				},
 				{
-					"type": "Door",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "vertical",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 20,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1670,
-						"y": 571,
-						"width": -116.031091,
-						"height": 150.49904867114736,
-						"originX": 0.6774193548387096,
-						"originY": 0.5444444444444444,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Target",
 					"properties": {
 						"initially-visible": true,
@@ -186,8 +142,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 563,
-						"y": 390,
+						"x": 552,
+						"y": 391,
 						"width": 1160,
 						"height": 409,
 						"originX": 0,

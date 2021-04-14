@@ -22,10 +22,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -413,
-						"y": -162,
-						"width": 1744,
-						"height": 994,
+						"x": -175,
+						"y": -350,
+						"width": 1243,
+						"height": 977,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -70,7 +70,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "\n    GAME OVER\n\nPress any key to go back to the title",
+						"text": "GAME OVER\n\nPress any key to go back to the title",
 						"enable-bbcode": true,
 						"font": "PressStart2P-Regular",
 						"size": 22,
@@ -83,7 +83,7 @@
 							0.24705882352941178,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
@@ -93,9 +93,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 138,
-						"y": 59,
-						"width": 617,
+						"x": 98,
+						"y": 93,
+						"width": 680,
 						"height": 353,
 						"originX": 0,
 						"originY": 0,
