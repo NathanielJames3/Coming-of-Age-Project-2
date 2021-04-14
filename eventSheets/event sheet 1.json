@@ -12,6 +12,16 @@
 			"sid": 338134918248325
 		},
 		{
+			"eventType": "variable",
+			"name": "death",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 178859851378464
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Actions",
@@ -690,6 +700,14 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "promptText",
+							"sid": 473885640300505,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 145261707286658
@@ -759,59 +777,6 @@
 						}
 					],
 					"sid": 535810321693372
-				},
-				{
-					"eventType": "comment",
-					"text": "Set prompt text to visible when player is near target"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Family1",
-							"sid": 378034533062968,
-							"parameters": {
-								"object": "textPromptbox"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "promptText",
-							"sid": 631262052420487,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 227606643245027
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Family1",
-							"sid": 676658698465507,
-							"parameters": {
-								"object": "textPromptbox"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "promptText",
-							"sid": 551961942151182,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 978793663927603
 				}
 			],
 			"sid": 555358870012969
@@ -1148,11 +1113,20 @@
 					],
 					"actions": [
 						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 270246179673643,
+							"parameters": {
+								"variable": "death",
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 940162813643778,
+							"sid": 948488846829333,
 							"parameters": {
-								"group-name": "\"Old\"",
+								"group-name": "\"Player Actions\"",
 								"state": "deactivated"
 							}
 						},
@@ -1182,9 +1156,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 575281411398284,
+							"sid": 166163351704129,
 							"parameters": {
-								"seconds": "3"
+								"seconds": "2.5"
 							}
 						},
 						{
@@ -1638,6 +1612,39 @@
 						}
 					],
 					"sid": 401827175426649
+				},
+				{
+					"eventType": "comment",
+					"text": "Death sound"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 436932838817501,
+							"parameters": {
+								"variable": "death",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 211084509303979,
+							"parameters": {
+								"audio-file": "man-dying-1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 752489195542883
 				}
 			],
 			"sid": 290591695778622

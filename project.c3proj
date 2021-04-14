@@ -290,6 +290,11 @@
 					"name": "DoorOpen2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 290951483063966
+				},
+				{
+					"name": "man-dying-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 671866890053282
 				}
 			],
 			"subfolders": []
