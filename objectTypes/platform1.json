@@ -8,7 +8,7 @@
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 866061817455688
+			"sid": 261909074256221
 		}
 	],
 	"effectTypes": [],
@@ -24,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4373831,
+						"imageSpriteId": 9940976,
 						"collisionPoly": {
 							"points": [
 								0,

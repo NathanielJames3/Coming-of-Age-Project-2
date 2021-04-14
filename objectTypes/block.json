@@ -1,10 +1,21 @@
 {
-	"name": "solid9",
+	"name": "block",
 	"plugin-id": "Sprite",
-	"sid": 105456991694805,
+	"sid": 144252674120039,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 491401245348678
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 202251374985642
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -12,13 +23,13 @@
 				"frames": [
 					{
 						"width": 252,
-						"height": 70,
+						"height": 63,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.3333333333333333,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1504203,
+						"imageSpriteId": 3253476,
 						"collisionPoly": {
 							"points": [
 								0.003968253968253968,
@@ -35,7 +46,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 656225116364244,
+				"sid": 791246065669364,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

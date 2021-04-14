@@ -192,7 +192,8 @@
 			"Particles",
 			"EndDoor",
 			"SlingshotUI",
-			"SlingshotAmmo"
+			"SlingshotAmmo",
+			"block"
 		],
 		"subfolders": []
 	},
