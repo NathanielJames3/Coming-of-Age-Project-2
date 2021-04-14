@@ -135,7 +135,6 @@
 			"Keyboard",
 			"SlingshotGet",
 			"ShotBullet",
-			"AmmoText",
 			"Hourglass",
 			"TimeText",
 			"Door",
@@ -191,7 +190,9 @@
 			"ground4",
 			"Sprite3",
 			"Particles",
-			"EndDoor"
+			"EndDoor",
+			"SlingshotUI",
+			"SlingshotAmmo"
 		],
 		"subfolders": []
 	},

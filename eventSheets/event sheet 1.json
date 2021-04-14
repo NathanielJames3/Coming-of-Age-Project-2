@@ -674,6 +674,22 @@
 								"instance-variable": "Slingshot",
 								"value": "1"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SlingshotUI",
+							"sid": 202420887471955,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SlingshotAmmo",
+							"sid": 206042398703895,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 145261707286658
