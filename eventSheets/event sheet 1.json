@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "LimitTime",
 			"type": "number",
-			"initialValue": "30",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1148,9 +1148,44 @@
 					],
 					"actions": [
 						{
-							"id": "reset-global-variables",
+							"id": "set-group-active",
 							"objectClass": "System",
-							"sid": 655086905464355
+							"sid": 940162813643778,
+							"parameters": {
+								"group-name": "\"Old\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "TimerHealthBarSprite",
+							"sid": 366870314405467
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "PlayerOld",
+							"sid": 316011224318858,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "PlayerOld",
+							"sid": 121377984845978,
+							"parameters": {
+								"animation": "\"Death\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 575281411398284,
+							"parameters": {
+								"seconds": "3"
+							}
 						},
 						{
 							"id": "go-to-layout",
@@ -1159,6 +1194,11 @@
 							"parameters": {
 								"layout": "GameOver"
 							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 829163025992411
 						}
 					],
 					"sid": 919453466589942

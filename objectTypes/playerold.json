@@ -264,6 +264,81 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 2.5
+			},
+			{
+				"frames": [
+					{
+						"width": 284,
+						"height": 435,
+						"originX": 0.49295774647887325,
+						"originY": 0.5471264367816092,
+						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\deathanimation.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4657950,
+						"collisionPoly": {
+							"points": [
+								0.19718309859154926,
+								0.25287356321839083,
+								0.49295774647887325,
+								0.0022988505747126436,
+								0.8204225352112676,
+								0.22988505747126436,
+								0.665492957746479,
+								0.5471264367816092,
+								0.676056338028169,
+								0.767816091954023,
+								0.49295774647887325,
+								0.9701149425287356,
+								0.0528169014084507,
+								0.9333333333333333,
+								0.014084507042253521,
+								0.5471264367816092
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 212,
+						"height": 222,
+						"originX": 0.5,
+						"originY": 0.509009009009009,
+						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\tombstone.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5294893,
+						"collisionPoly": {
+							"points": [
+								0.1650943396226415,
+								0.2747747747747748,
+								0.5,
+								0.0045045045045045045,
+								0.8773584905660378,
+								0.22972972972972974,
+								0.981132075471698,
+								0.509009009009009,
+								0.981132075471698,
+								0.8828828828828829,
+								0.5,
+								0.990990990990991,
+								0.0047169811320754715,
+								0.8918918918918919,
+								0.07075471698113205,
+								0.509009009009009
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 299504774659450,
+				"name": "Death",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 2
 			}
 		],
 		"subfolders": []
