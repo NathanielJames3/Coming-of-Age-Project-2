@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "LimitTime",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "30",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
