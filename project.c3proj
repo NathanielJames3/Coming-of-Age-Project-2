@@ -119,6 +119,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "warpripple",
 			"name": "Warp ripple",
@@ -197,7 +205,8 @@
 			"promptText",
 			"textPromptbox",
 			"arrowKeys",
-			"zKey"
+			"zKey",
+			"Transition"
 		],
 		"subfolders": []
 	},

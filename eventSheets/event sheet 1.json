@@ -1060,28 +1060,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 371816467502729
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "TimeText",
-							"sid": 270969434093450,
-							"parameters": {
-								"text": "\"Time: \" & LimitTime"
-							}
-						}
-					],
-					"sid": 272694186335421,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Family1",
 							"sid": 614864431593016,
@@ -1625,6 +1603,10 @@
 			"sid": 290591695778622
 		},
 		{
+			"eventType": "comment",
+			"text": "Level transititon"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1640,6 +1622,27 @@
 					"sid": 160050293387012,
 					"parameters": {
 						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 805936790189660,
+					"parameters": {
+						"object-to-create": "Transition",
+						"layer": "2",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Transition",
+					"sid": 195894329176467,
+					"parameters": {
+						"width": "LayoutWidth",
+						"height": "LayoutHeight"
 					}
 				}
 			],
