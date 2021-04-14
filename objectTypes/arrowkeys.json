@@ -1,0 +1,20 @@
+{
+	"name": "arrowKeys",
+	"plugin-id": "TiledBg",
+	"sid": 751761698228345,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 120,
+		"height": 79,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\tori0\\Downloads\\keys-arrow-wsad-mouse.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 90183,
+		"useCollisionPoly": true
+	}
+}

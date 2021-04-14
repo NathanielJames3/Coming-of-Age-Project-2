@@ -195,7 +195,9 @@
 			"SlingshotAmmo",
 			"block",
 			"promptText",
-			"textPromptbox"
+			"textPromptbox",
+			"arrowKeys",
+			"zKey"
 		],
 		"subfolders": []
 	},
