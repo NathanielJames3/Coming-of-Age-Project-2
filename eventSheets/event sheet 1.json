@@ -1122,27 +1122,18 @@
 							}
 						},
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 948488846829333,
+							"id": "set-ignoring-input",
+							"objectClass": "PlayerOld",
+							"sid": 480487945145682,
+							"behaviorType": "Platform",
 							"parameters": {
-								"group-name": "\"Player Actions\"",
-								"state": "deactivated"
+								"input": "start-ignoring"
 							}
 						},
 						{
 							"id": "destroy",
 							"objectClass": "TimerHealthBarSprite",
 							"sid": 366870314405467
-						},
-						{
-							"id": "set-ignoring-input",
-							"objectClass": "PlayerOld",
-							"sid": 316011224318858,
-							"behaviorType": "Platform",
-							"parameters": {
-								"input": "start-ignoring"
-							}
 						},
 						{
 							"id": "set-animation",
