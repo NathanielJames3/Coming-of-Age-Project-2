@@ -987,34 +987,6 @@
 			"sid": 363267438617778
 		},
 		{
-			"eventType": "comment",
-			"text": "Music"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 687926402116037
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 339885895039640,
-					"parameters": {
-						"audio-file": "the_fade",
-						"loop": "looping",
-						"volume": "-10",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 414321815191788
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Time Limit",
