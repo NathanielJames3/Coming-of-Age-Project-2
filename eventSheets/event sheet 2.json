@@ -21,6 +21,52 @@
 				}
 			],
 			"sid": 698600459673353
+		},
+		{
+			"eventType": "comment",
+			"text": "Fix for double BG music"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 501653072945139
+				}
+			],
+			"actions": [],
+			"sid": 450294935484098,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 946561311857627,
+							"parameters": {
+								"tag": "\"BGmusic\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 364492873567198,
+							"parameters": {
+								"audio-file": "the_fade",
+								"loop": "looping",
+								"volume": "0",
+								"tag-optional": "\"BGmusic\""
+							}
+						}
+					],
+					"sid": 242028819818315
+				}
+			]
 		}
 	],
 	"sid": 660988187307457
