@@ -22,6 +22,16 @@
 			"sid": 178859851378464
 		},
 		{
+			"eventType": "variable",
+			"name": "slingshot",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 697948472447481
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player Actions",
@@ -89,54 +99,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 845824687185331,
-									"parameters": {
-										"key": 37
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "PlayerOld",
-									"sid": 144964411216855,
-									"parameters": {
-										"state": "mirrored"
-									}
-								}
-							],
-							"sid": 533953782647194
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 517241880318113,
-									"parameters": {
-										"key": 39
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "PlayerOld",
-									"sid": 798619443831813,
-									"parameters": {
-										"state": "not-mirrored"
-									}
-								}
-							],
-							"sid": 352077203508379
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "on-created",
 									"objectClass": "ShotBullet",
 									"sid": 656275846943306
@@ -158,6 +120,54 @@
 								}
 							],
 							"sid": 919587378069303
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 403786571585866,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerOld",
+									"sid": 147251613637757,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 622314439868158
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 905569484292415,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "PlayerOld",
+									"sid": 406335163241543,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 258062682909354
 						}
 					],
 					"sid": 462043349921428
@@ -677,15 +687,6 @@
 							}
 						},
 						{
-							"id": "add-to-instvar",
-							"objectClass": "Family1",
-							"sid": 636725881774255,
-							"parameters": {
-								"instance-variable": "Slingshot",
-								"value": "1"
-							}
-						},
-						{
 							"id": "set-visible",
 							"objectClass": "SlingshotUI",
 							"sid": 202420887471955,
@@ -707,6 +708,15 @@
 							"sid": 473885640300505,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 651806637138135,
+							"parameters": {
+								"variable": "slingshot",
+								"value": "true"
 							}
 						}
 					],
@@ -742,13 +752,11 @@
 							}
 						},
 						{
-							"id": "compare-instance-variable",
-							"objectClass": "Family1",
-							"sid": 511910996463117,
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 897500937775061,
 							"parameters": {
-								"instance-variable": "Slingshot",
-								"comparison": 0,
-								"value": "1"
+								"variable": "slingshot"
 							}
 						}
 					],
@@ -1177,6 +1185,11 @@
 								"comparison": 3,
 								"value": "20"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 919827897039626
 						}
 					],
 					"actions": [
@@ -1275,6 +1288,11 @@
 								"comparison": 3,
 								"value": "10"
 							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 521168906946540
 						}
 					],
 					"actions": [
@@ -1637,10 +1655,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 805936790189660,
+					"sid": 975888868370291,
 					"parameters": {
 						"object-to-create": "Transition",
-						"layer": "2",
+						"layer": "\"UI\"",
 						"x": "0",
 						"y": "0",
 						"create-hierarchy": false

@@ -949,9 +949,7 @@
 						"live-preview": false
 					},
 					"uid": 383,
-					"instanceVariables": {
-						"Slingshot": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo2": {
 							"properties": {
@@ -1005,9 +1003,7 @@
 						"live-preview": false
 					},
 					"uid": 387,
-					"instanceVariables": {
-						"Slingshot": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo2": {
 							"properties": {
@@ -1061,9 +1057,7 @@
 						"live-preview": false
 					},
 					"uid": 388,
-					"instanceVariables": {
-						"Slingshot": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo2": {
 							"properties": {
