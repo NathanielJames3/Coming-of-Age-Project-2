@@ -206,7 +206,8 @@
 			"textPromptbox",
 			"arrowKeys",
 			"zKey",
-			"Transition"
+			"Transition",
+			"platform6"
 		],
 		"subfolders": []
 	},
