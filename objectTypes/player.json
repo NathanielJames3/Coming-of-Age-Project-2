@@ -29,7 +29,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Idle_Frame_1.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 384294,
+						"imageSpriteId": 6576603,
 						"collisionPoly": {
 							"points": [
 								0.2032520325203252,
@@ -61,7 +61,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Idle_Frame_2.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3809834,
+						"imageSpriteId": 8626893,
 						"collisionPoly": {
 							"points": [
 								0.22764227642276422,
@@ -93,7 +93,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Idle_Frame_3.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5291079,
+						"imageSpriteId": 3460327,
 						"collisionPoly": {
 							"points": [
 								0.1978319783197832,
@@ -136,7 +136,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Walk_Frame_1_fixed.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7639698,
+						"imageSpriteId": 8214652,
 						"collisionPoly": {
 							"points": [
 								0.19241192411924118,
@@ -168,7 +168,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Walk_Frame_2_fixed.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2217103,
+						"imageSpriteId": 5078986,
 						"collisionPoly": {
 							"points": [
 								0.19241192411924118,
@@ -200,7 +200,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Walk_Frame_3_fixed.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8279293,
+						"imageSpriteId": 7710281,
 						"collisionPoly": {
 							"points": [
 								0.19241192411924118,
@@ -243,7 +243,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Jump_Frame_Fixed.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3453669,
+						"imageSpriteId": 5613849,
 						"collisionPoly": {
 							"points": [
 								0.1978319783197832,
@@ -275,7 +275,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Jump_Frame_Fixed.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8129173,
+						"imageSpriteId": 4610000,
 						"collisionPoly": {
 							"points": [
 								0.1978319783197832,
@@ -307,7 +307,7 @@
 						"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\Juvi_Jump_Frame_Fixed.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 898014,
+						"imageSpriteId": 1448035,
 						"collisionPoly": {
 							"points": [
 								0.1978319783197832,
