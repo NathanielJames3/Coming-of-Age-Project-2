@@ -142,36 +142,7 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				}
-			],
-			"sid": 374298054256307,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": false,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "GAME",
-			"overriden": 0,
-			"instances": [
+				},
 				{
 					"type": "Platform",
 					"properties": {
@@ -181,7 +152,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 43,
+					"uid": 29,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -192,10 +163,10 @@
 						}
 					},
 					"world": {
-						"x": 1296,
-						"y": 851.5,
-						"width": 909,
-						"height": 267,
+						"x": 417,
+						"y": 787,
+						"width": 840,
+						"height": 637,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -228,10 +199,10 @@
 						}
 					},
 					"world": {
-						"x": 400,
-						"y": 770.5,
-						"width": 884,
-						"height": 596,
+						"x": 1274,
+						"y": 942,
+						"width": 904,
+						"height": 456,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -243,7 +214,36 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 374298054256307,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "GAME",
+			"overriden": 0,
+			"instances": [
 				{
 					"type": "solid1",
 					"properties": {
@@ -1247,42 +1247,6 @@
 						"y": -142,
 						"width": 102.2318662362361,
 						"height": 64.75924035764486,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Platform",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 29,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 834,
-						"y": 1119,
-						"width": 1723,
-						"height": 539,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
