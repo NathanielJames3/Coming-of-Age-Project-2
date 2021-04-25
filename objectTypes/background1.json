@@ -7,14 +7,14 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 440,
-		"height": 440,
+		"width": 865,
+		"height": 865,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "C:\\Users\\tori0\\Downloads\\BedroomBG\\SkyBG.png",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 3952777,
+		"imageSpriteId": 127767,
 		"useCollisionPoly": true
 	}
 }
