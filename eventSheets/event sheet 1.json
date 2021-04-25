@@ -907,12 +907,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 556616674376603,
+							"sid": 979964622604819,
 							"parameters": {
 								"object-to-create": "Cloud1",
 								"layer": "2",
 								"x": "-280",
-								"y": "random(-32,200)",
+								"y": "random(-32,240)",
 								"create-hierarchy": false
 							}
 						}
@@ -935,12 +935,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 638614132129438,
+							"sid": 395886852231275,
 							"parameters": {
 								"object-to-create": "Cloud2",
 								"layer": "2",
-								"x": "-280",
-								"y": "random(-32,200)",
+								"x": "-280 ",
+								"y": "random(-32,240)",
 								"create-hierarchy": false
 							}
 						}
