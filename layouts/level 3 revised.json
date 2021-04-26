@@ -789,10 +789,10 @@
 						}
 					},
 					"world": {
-						"x": 1318,
-						"y": 160,
-						"width": 148.99999999999997,
-						"height": 30,
+						"x": 1269,
+						"y": 231,
+						"width": 75.99999999999997,
+						"height": 28,
 						"originX": 0.5291970802919708,
 						"originY": 0.012345679012345678,
 						"color": [
@@ -1526,6 +1526,56 @@
 						"Sine": {
 							"properties": {
 								"movement": "vertical",
+								"wave": "square",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 1271,
+						"y": 492,
+						"width": 172,
+						"height": 36,
+						"originX": 0.5370370370370371,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "platform6",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 113,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
 								"wave": "sine",
 								"period": 4,
 								"period-random": 0,
@@ -1539,10 +1589,10 @@
 						}
 					},
 					"world": {
-						"x": 1318.962962962963,
-						"y": 476,
-						"width": 131,
-						"height": 43,
+						"x": 1494.2037037037037,
+						"y": 276,
+						"width": 96,
+						"height": 21,
 						"originX": 0.5370370370370371,
 						"originY": 0,
 						"color": [
