@@ -1526,7 +1526,7 @@
 						"Sine": {
 							"properties": {
 								"movement": "vertical",
-								"wave": "square",
+								"wave": "sine",
 								"period": 4,
 								"period-random": 0,
 								"period-offset": 0,
@@ -1589,8 +1589,8 @@
 						}
 					},
 					"world": {
-						"x": 1494.2037037037037,
-						"y": 276,
+						"x": 1494,
+						"y": 227,
 						"width": 96,
 						"height": 21,
 						"originX": 0.5370370370370371,

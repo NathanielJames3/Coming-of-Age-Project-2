@@ -18,14 +18,14 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 191,
+					"uid": 112,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -413,
-						"y": -162,
-						"width": 1744,
-						"height": 994,
+						"x": -5,
+						"y": -4,
+						"width": 861,
+						"height": 492,
 						"originX": 0,
 						"originY": 0,
 						"color": [
