@@ -208,7 +208,11 @@
 			"zKey",
 			"Transition",
 			"platform6",
-			"L4BG"
+			"L4BG",
+			"platform7",
+			"platform8",
+			"Sprite4",
+			"platform9"
 		],
 		"subfolders": []
 	},
