@@ -268,14 +268,14 @@
 			{
 				"frames": [
 					{
-						"width": 283,
-						"height": 361,
+						"width": 320,
+						"height": 515,
 						"originX": 0.5830388692579506,
 						"originY": 0.5955678670360111,
 						"originalSource": "C:\\Users\\tori0\\Downloads\\ComingofAge\\Old_Jump.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5867417,
+						"imageSpriteId": 7424792,
 						"collisionPoly": {
 							"points": [
 								0.3250883392226148,

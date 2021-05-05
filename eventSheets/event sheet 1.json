@@ -49,56 +49,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 811661068833174,
-									"parameters": {
-										"key": 39
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "PlayerOld",
-									"sid": 490026547643669,
-									"parameters": {
-										"animation": "\"Walk\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 528411039922472
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 800399465753227,
-									"parameters": {
-										"key": 37
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "PlayerOld",
-									"sid": 346648315047905,
-									"parameters": {
-										"animation": "\"Walk\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 548184446607167
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "on-created",
 									"objectClass": "ShotBullet",
 									"sid": 656275846943306
@@ -168,6 +118,135 @@
 								}
 							],
 							"sid": 258062682909354
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 993214713518100,
+									"parameters": {
+										"key": 39
+									}
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerOld",
+									"sid": 308240821935780,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerOld",
+									"sid": 175269493625167,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 278853615208572
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 441870397048645,
+									"parameters": {
+										"key": 37
+									}
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerOld",
+									"sid": 231052267047031,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerOld",
+									"sid": 125964568718647,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 514410562650151
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerOld",
+									"sid": 222266828839182,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerOld",
+									"sid": 583843563144515,
+									"parameters": {
+										"animation": "\"Jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 513395085234973
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 286536371699921,
+									"parameters": {
+										"key": 39
+									},
+									"isInverted": true
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 556206056773656,
+									"parameters": {
+										"key": 37
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerOld",
+									"sid": 261060585961047,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerOld",
+									"sid": 755256301830707,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 422782596483244
 						}
 					],
 					"sid": 462043349921428
@@ -263,6 +342,13 @@
 									"parameters": {
 										"key": 39
 									}
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerTeen",
+									"sid": 621085699476831,
+									"behaviorType": "Platform",
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -288,6 +374,13 @@
 									"parameters": {
 										"key": 37
 									}
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerTeen",
+									"sid": 343694121087428,
+									"behaviorType": "Platform",
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -302,6 +395,71 @@
 								}
 							],
 							"sid": 960792701186796
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerTeen",
+									"sid": 329729582979290,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerTeen",
+									"sid": 478971562853131,
+									"parameters": {
+										"animation": "\"Jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 568586140078359
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 184532696330486,
+									"parameters": {
+										"key": 39
+									},
+									"isInverted": true
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 984455448048301,
+									"parameters": {
+										"key": 37
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "PlayerTeen",
+									"sid": 243773433985929,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "PlayerTeen",
+									"sid": 490116764835228,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 946475109010443
 						}
 					],
 					"sid": 612373121884298
@@ -442,34 +600,17 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-stopped",
-									"objectClass": "Player",
-									"sid": 997060571351234,
-									"disabled": true,
-									"behaviorType": "Platform"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 970234569620795,
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 379721335883544,
 									"parameters": {
-										"animation": "\"Idle\"",
-										"from": "beginning"
+										"key": 39
 									}
-								}
-							],
-							"sid": 717645736504789,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
+								},
 								{
-									"id": "is-moving",
+									"id": "is-jumping",
 									"objectClass": "Player",
-									"sid": 343287164193464,
+									"sid": 837372228341674,
 									"behaviorType": "Platform",
 									"isInverted": true
 								}
@@ -478,14 +619,46 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 366198381735781,
+									"sid": 299431253736177,
 									"parameters": {
-										"animation": "\"Idle\"",
+										"animation": "\"Walk\"",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 674049958252811
+							"sid": 280737011192979
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 307401146114552,
+									"parameters": {
+										"key": 37
+									}
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "Player",
+									"sid": 892967444789120,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 147538520980922,
+									"parameters": {
+										"animation": "\"Walk\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 405109160787630
 						},
 						{
 							"eventType": "block",
@@ -493,7 +666,7 @@
 								{
 									"id": "is-jumping",
 									"objectClass": "Player",
-									"sid": 118856458210284,
+									"sid": 991773379151685,
 									"behaviorType": "Platform"
 								}
 							],
@@ -501,60 +674,56 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 942778917606224,
+									"sid": 539499750131044,
 									"parameters": {
 										"animation": "\"Jump\"",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 789362029673842
+							"sid": 727828287849880
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-falling",
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 674296910974326,
+									"parameters": {
+										"key": 39
+									},
+									"isInverted": true
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 370446702512354,
+									"parameters": {
+										"key": 37
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-jumping",
 									"objectClass": "Player",
-									"sid": 488916366032022,
-									"behaviorType": "Platform"
+									"sid": 130237925265682,
+									"behaviorType": "Platform",
+									"isInverted": true
 								}
 							],
 							"actions": [
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 261607786061091,
+									"sid": 799481621848701,
 									"parameters": {
-										"animation": "\"Jump\"",
+										"animation": "\"Idle\"",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 189190061267589
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-moving",
-									"objectClass": "Player",
-									"sid": 570540235775924,
-									"behaviorType": "Platform"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 344222625797726,
-									"parameters": {
-										"animation": "\"Walk\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 545008979993631
+							"sid": 679268887311417
 						}
 					],
 					"sid": 786356270073698
