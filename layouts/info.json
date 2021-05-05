@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "background2",
+					"type": "background1",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -22,10 +22,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -342,
-						"y": -156,
-						"width": 1467,
-						"height": 805,
+						"x": 1,
+						"y": -20,
+						"width": 857,
+						"height": 608,
 						"originX": 0,
 						"originY": 0,
 						"color": [
